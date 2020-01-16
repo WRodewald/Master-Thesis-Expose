@@ -1,0 +1,960 @@
+
+@phdthesis{degottex_glottal_2010,
+	title = {Glottal source and vocal-tract separation},
+	abstract = {This study addresses the problem of inverting a voice production model to retrieve, for a given recording, a representation of the sound source which is generated at the glottis level, the glottal source, and a representation of the resonances and anti-resonances of the vocal-tract. This separation gives the possibility to manipulate independently the elements composing the voice. There are many applications of this subject like the ones presented in this study, namely voice transformation and speech synthesis, as well as many others such as identity conversion, expressivity synthesis, voice restoration which can be used in entertainment technologies, artistic sound installations, movies and music industry, toys and video games, telecommunication, etc.},
+	school = {Université Pierre-et-Marie-Curie},
+	author = {Degottex, Gilles},
+	year = {2010}
+}
+
+@article{ghosh_joint_2011,
+	title = {Joint source-filter optimization for robust glottal source estimation in the presence of shimmer and jitter},
+	volume = {53},
+	issn = {0167-6393},
+	url = {http://www.sciencedirect.com/science/article/pii/S0167639310001317},
+	doi = {10.1016/j.specom.2010.07.004},
+	abstract = {We propose a glottal source estimation method robust to shimmer and jitter in the glottal flow. The proposed estimation method is based on a joint source-filter optimization technique. The glottal source is modeled by the Liljencrants–Fant (LF) model and the vocal-tract filter is modeled by an auto-regressive filter, which is common in the source-filter approach to speech production. The optimization estimates the parameters of the LF model, the amplitudes of the glottal flow in each pitch period, and the vocal-tract filter coefficients so that the speech production model best describes the observed speech samples. Experiments with synthetic and real speech data show that the proposed estimation method is robust to different phonation types with varying shimmer and jitter characteristics.},
+	number = {1},
+	urldate = {2020-01-13},
+	journal = {Speech Communication},
+	author = {Ghosh, Prasanta Kumar and Narayanan, Shrikanth S.},
+	month = jan,
+	year = {2011},
+	keywords = {Glottal flow derivative, Glottal source estimation, Jitter, Shimmer},
+	pages = {98--109}
+}
+
+@inproceedings{klapuri_analysis_2007,
+	address = {Honolulu, HI, USA},
+	title = {Analysis of {Musical} {Instrument} {Sounds} by {Source}-{Filter}-{Decay} {Model}},
+	isbn = {978-1-4244-0727-9},
+	url = {http://ieeexplore.ieee.org/document/4217014/},
+	abstract = {This paper proposes a way of modelling the time-varying spectral energy distribution of musical instrument sounds. The model consists of an excitation signal, a body response filter, and a loss filter which implements a frequency-dependent decay. The three parts are further represented with a linear model which allows controlling the number ofparameters involved. A method is proposed for estimating all the model parameters jointly, taking into account additive noise. The method is evaluated by measuring its accuracy in representing 33 musical instruments and by testing its usefulness in extracting the melodic line of one instrument from a polyphonic audio signal.},
+	urldate = {2020-01-09},
+	booktitle = {{IEEE} {International} {Conference} on {Acoustics}, {Speech} and {Signal} {Processing}},
+	publisher = {IEEE},
+	author = {Klapuri, Anssi},
+	year = {2007},
+	pages = {I--53--I--56}
+}
+
+@inproceedings{villavicencio_improving_2006,
+	address = {Toulouse, France},
+	title = {Improving {Lpc} {Spectral} {Envelope} {Extraction} {Of} {Voiced} {Speech} {By} {True}-{Envelope} {Estimation}},
+	volume = {1},
+	isbn = {978-1-4244-0469-8},
+	url = {http://ieeexplore.ieee.org/document/1660159/},
+	abstract = {In this work we address the problem of all pole spectral envelope estimation for speech signals. The currently widely used all pole spectral envelope model suffers from well-known systematic errors and more severely from model order mismatch. We will propose a procedure to ﬁrst establish a band limited interpolation of the observed spectrum using a recently rediscovered true envelope estimator and then using the band limited envelope to derive an all pole envelope model named TE-LPC . The band-limited envelope that is used to derive the all pole envelope model reduces the problem of the unknown all pole model order.},
+	urldate = {2020-01-09},
+	booktitle = {{IEEE} {International} {Conference} on {Acoustics}, {Speech} and {Signal} {Processing}},
+	publisher = {IEEE},
+	author = {Villavicencio, F. and Robel, A. and Rodet, X.},
+	year = {2006},
+	pages = {I--869--I--872}
+}
+
+@article{salomao_what_2009,
+	title = {What do male singers mean by modal and falsetto register? {An} investigation of the glottal voice source},
+	volume = {34},
+	issn = {1401-5439, 1651-2022},
+	shorttitle = {What do male singers mean by modal and falsetto register?},
+	url = {http://www.tandfonline.com/doi/full/10.1080/14015430902879918},
+	abstract = {The voice source differs between modal and falsetto registers, but singers often try to reduce the associated timbral differences, some even doubting that there are any. A total of 54 vowel sounds sung in falsetto and modal register by 13 male more or less experienced choir singers were analyzed by inverse filtering and electroglottography. Closed quotient, maximum flow declination rate, peak-to-peak airflow amplitude, normalized amplitude quotient, and level difference between the two lowest source spectrum partials were determined, and systematic differences were found in all singers, regardless of experience of singing. The observations seem compatible with previous observations of thicker vocal folds in modal register.},
+	number = {2},
+	urldate = {2020-01-09},
+	journal = {Logopedics Phoniatrics Vocology},
+	author = {Salomão, Gláucia Laís and Sundberg, Johan},
+	month = jan,
+	year = {2009},
+	pages = {73--83}
+}
+
+@article{degottex_mixed_2013,
+	title = {Mixed source model and its adapted vocal tract filter estimate for voice transformation and synthesis},
+	volume = {55},
+	issn = {01676393},
+	url = {https://linkinghub.elsevier.com/retrieve/pii/S0167639312001021},
+	abstract = {In current methods for voice transformation and speech synthesis, the vocal tract ﬁlter is usually assumed to be excited by a ﬂat amplitude spectrum. In this article, we present a method using a mixed source model deﬁned as a mixture of the Liljencrants–Fant (LF) model and Gaussian noise. Using the LF model, the base approach used in this presented work is therefore close to a vocoder using exogenous input like ARX-based methods or the Glottal Spectral Separation (GSS) method. Such approaches are therefore dedicated to voice processing promising an improved naturalness compared to generic signal models. To estimate the Vocal Tract Filter (VTF), using spectral division like in GSS, we show that a glottal source model can be used with any envelope estimation method conversely to ARX approach where a least square AR solution is used. We therefore derive a VTF estimate which takes into account the amplitude spectra of both deterministic and random components of the glottal source. The proposed mixed source model is controlled by a small set of intuitive and independent parameters. The relevance of this voice production model is evaluated, through listening tests, in the context of resynthesis, HMM-based speech synthesis, breathiness modiﬁcation and pitch transposition.},
+	number = {2},
+	urldate = {2020-01-09},
+	journal = {Speech Communication},
+	author = {Degottex, Gilles and Lanchantin, Pierre and Roebel, Axel and Rodet, Xavier},
+	month = feb,
+	year = {2013},
+	pages = {278--294}
+}
+
+@inproceedings{caetano_source-filter_2012,
+	address = {Kyoto, Japan},
+	title = {A source-filter model for musical instrument sound transformation},
+	isbn = {978-1-4673-0046-9 978-1-4673-0045-2 978-1-4673-0044-5},
+	url = {http://ieeexplore.ieee.org/document/6287836/},
+	abstract = {The model used to represent musical instrument sounds plays a crucial role in the quality of sound transformations. Ideally, the representation should be compact and accurate, while its parameters should give ﬂexibility to independently manipulate perceptually related features of the sounds. This work describes a source-ﬁlter model for musical instrument sounds based on the sinusoidal plus residual decomposition. The sinusoidal component is modeled as sinusoidal partial tracks (source) and a time-varying spectral envelope (ﬁlter), and the residual is represented as white noise (source) shaped by a time-varying spectral envelope (ﬁlter). This article presents estimation and representation techniques that give totally independent and intuitive control of the spectral envelope model and the frequencies of the partials to perform perceptually related sound transformations. The result of a listening test conﬁrmed that, in general, the sounds resynthesized from the source-ﬁlter model are perceptually similar to the original recordings.},
+	urldate = {2020-01-09},
+	booktitle = {{IEEE} {International} {Conference} on {Acoustics}, {Speech} and {Signal} {Processing}},
+	publisher = {IEEE},
+	author = {Caetano, Marcelo and Rodet, Xavier},
+	month = mar,
+	year = {2012},
+	pages = {137--140}
+}
+
+@article{morise_cheaptrick_2015,
+	title = {{CheapTrick}, a spectral envelope estimator for high-quality speech synthesis},
+	volume = {67},
+	issn = {01676393},
+	url = {https://linkinghub.elsevier.com/retrieve/pii/S0167639314000697},
+	abstract = {A spectral envelope estimation algorithm is presented to achieve high-quality speech synthesis. The concept of the algorithm is to obtain an accurate and temporally stable spectral envelope. The algorithm uses fundamental frequency (F0) and consists of F0-adaptive windowing, smoothing of the power spectrum, and spectral recovery in the quefrency domain. Objective and subjective evaluations were carried out to demonstrate the eﬀectiveness of the proposed algorithm. Results of both evaluations indicated that the proposed algorithm can obtain a temporally stable spectral envelope and synthesize speech with higher sound quality than speech synthesized with other algorithms.},
+	urldate = {2020-01-09},
+	journal = {Speech Communication},
+	author = {Morise, Masanori},
+	month = mar,
+	year = {2015},
+	pages = {1--7}
+}
+
+@article{morise_world:_2016,
+	title = {{WORLD}: {A} {Vocoder}-{Based} {High}-{Quality} {Speech} {Synthesis} {System} for {Real}-{Time} {Applications}},
+	volume = {E99.D},
+	issn = {0916-8532, 1745-1361},
+	shorttitle = {{WORLD}},
+	abstract = {A vocoder-based speech synthesis system, named WORLD, was developed in an eﬀort to improve the sound quality of realtime applications using speech. Speech analysis, manipulation, and synthesis on the basis of vocoders are used in various kinds of speech research. Although several high-quality speech synthesis systems have been developed, real-time processing has been diﬃcult with them because of their high computational costs. This new speech synthesis system has not only sound quality but also quick processing. It consists of three analysis algorithms and one synthesis algorithm proposed in our previous research. The eﬀectiveness of the system was evaluated by comparing its output with against natural speech including consonants. Its processing speed was also compared with those of conventional systems. The results showed that WORLD was superior to the other systems in terms of both sound quality and processing speed. In particular, it was over ten times faster than the conventional systems, and the real time factor (RTF) indicated that it was fast enough for real-time processing.},
+	number = {7},
+	journal = {IEICE Transactions on Information and Systems},
+	author = {Morise, Masanori and Yokomori, Fumiya and Ozawa, Kenji},
+	year = {2016},
+	pages = {1877--1884}
+}
+
+@article{hahn_extended_2013,
+	title = {Extended {Source}-{Filter} {Model} for {Harmonic} {Instruments} for {Expressive} {Control} of {Sound} {Synthesis} and {Transformation}},
+	abstract = {In this paper we present a revised and improved version of a recently proposed extended source-ﬁlter model for sound synthesis, transformation and hybridization of harmonic instruments. This extension focuses mainly on the application for impulsively excited instruments like piano or guitar, but also improves synthesis results for continuously driven instruments including their hybrids. This technique comprises an extensive analysis of an instruments sound database, followed by the estimation of a generalized instrument model reﬂecting timbre variations according to selected control parameters. Such an instrument model allows for natural sounding transformations and expressive control of instrument sounds regarding its control parameters.},
+	author = {Hahn, Henrik and Röbel, Axel},
+	year = {2013},
+	pages = {9}
+}
+
+@inproceedings{degottex_simple_2016,
+	address = {Shanghai},
+	title = {Simple multi frame analysis methods for estimation of amplitude spectral envelope estimation in singing voice},
+	isbn = {978-1-4799-9988-0},
+	url = {http://ieeexplore.ieee.org/document/7472624/},
+	abstract = {In the state of the art, a single frame of DFT transform is commonly used as a basis for building amplitude spectral envelopes. Multiple Frame Analysis (MFA) has already been suggested for envelope estimation, but often with excessive complexity. In this paper, two MFA-based methods are presented: one simplifying an existing Least Square (LS) solution, and another one based on a simple linear interpolation. In the context of singing voice we study sustained segments with vibrato, because these ones are obviously critical for singing voice synthesis. They also provide a convenient context to study, prior to extension of this work in more general contexts. Numerical and perceptual experiments show clear improvements of the two methods described compared to the state of the art and encourage further studies in this research direction.},
+	urldate = {2020-01-09},
+	booktitle = {{IEEE} {International} {Conference} on {Acoustics}, {Speech} and {Signal} {Processing}},
+	publisher = {IEEE},
+	author = {Degottex, Gilles and Ardaillon, Luc and Roebel, Axel},
+	month = mar,
+	year = {2016},
+	pages = {4975--4979}
+}
+
+@inproceedings{feugere_evaluation_2016,
+	title = {Evaluation of {Singing} {Synthesis}: {Methodology} and {Case} {Study} with {Concatenative} and {Performative} {Systems}},
+	shorttitle = {Evaluation of {Singing} {Synthesis}},
+	url = {http://www.isca-speech.org/archive/Interspeech_2016/abstracts/1248.html},
+	abstract = {The special session Singing Synthesis Challenge: Fill-In the Gap aims at comparative evaluation of singing synthesis systems. The task is to synthesize a new couplet for two popular songs. This paper address the methodology needed for quality assessment of singing synthesis systems and reports on a case study using 2 systems with a total of 6 different conﬁgurations. The two synthesis systems are: a concatenative Textto-Chant (TTC) system, including a parametric representation of the melodic curve; a Singing Instrument (SI), allowing for real-time interpretation of utterances made of ﬂat-pitch natural voice or diphone concatenated voice. Absolute Category Rating (ACR) and Paired Comparison (PC) tests are used. Natural and natural-degraded reference conditions are used for calibration of the ACR test. The MOS obtained using ACR shows that the TTC (resp. the SI) ranks below natural voice but above (resp. in between) degraded conditions. Then singing synthesis quality is judged better than auto-tuned or distorted natural voice in some cases. PC results show that: 1/ signal processing is an important quality issue, making the difference between systems; 2/ diphone concatenation degrades the quality compared to ﬂat-pitch natural voice; 3/ Automatic melodic modelling is preferred to gestural control for off-line synthesis.},
+	urldate = {2020-01-09},
+	booktitle = {Interspeech},
+	author = {Feugère, Lionel and d’Alessandro, Christophe and Delalez, Samuel and Ardaillon, Luc and Roebel, Axel},
+	month = sep,
+	year = {2016},
+	pages = {1245--1249}
+}
+
+@article{bonada_unisong:_2006,
+	title = {Unisong: {A} {Choir} {Singing} {Synthesizer}},
+	abstract = {Computer generated singing choir synthesis can be achieved by two means: clone transformation of a single voice or concatenation of real choir recording snippets. As of today, the synthesis quality for these two methods lack of naturalness and intelligibility respectively. Unisong is a new concatenation based choir singing synthesizer able to generate a high quality synthetic performance out of the score and lyrics specified by the user. This article describes all actions and techniques that take place in the process of virtual synthesis generation: choir recording scripts design and realization, human supervised automatic segmentation of the recordings, creation of samples database, and sample acquiring, transformation and concatenation. The synthesizer will be demonstrated with a song sample.},
+	author = {Bonada, Jordi and Blaauw, Merlijn and Loscos, Alex and Kenmochi, Hideki},
+	year = {2006},
+	pages = {4}
+}
+
+@inproceedings{roebel_efficient_2005,
+	title = {Efficient {Spectral} {Envelope} {Estimation} and its application to pitch shifting and envelope preservation},
+	abstract = {In this article the estimation of the spectral envelope of sound signals is addressed. The intended application for the developed algorithm is pitch shifting with preservation of the spectral envelope in the phase vocoder. As a ﬁrst step the different existing envelope estimation algorithms are investigated and their speciﬁc properties discussed. As the most promising algorithm the cepstrum based iterative true envelope estimator is selected. By means of controlled sub-sampling of the log amplitude spectrum and by means of a simple step size control for the iterative algorithm the run time of the algorithm can be decreased by a factor of 2.5-11. As a remedy for the ringing effects in the the spectral envelope that are due to the rectangular ﬁlter used for spectral smoothing we propose the use of a Hamming window as smoothing ﬁlter. The resulting implementation of the algorithm has slightly increased computational complexity compared to the standard LPC algorithm but offers signiﬁcantly improved control over the envelope characteristics. The application of the true envelope estimator in a pitch shifting application is investigated. The main problems for pitch shifting with envelope preservation in a phase vocoder are identiﬁed and a simple yet efﬁcient remedy is proposed.},
+	booktitle = {International {Conference} on {Digital} {Audio} {Effects}},
+	author = {Roebel, Axel and Rodet, Xavier},
+	year = {2005},
+	pages = {7}
+}
+
+@article{bonada_voice_2005,
+	title = {Voice {Solo} to {Unison} {Choir} {Transformation}},
+	abstract = {In this paper we present a transformation which pretends to convert a voice solo into a big unison choir. The basic idea behind the presented algorithm is to morph the input voice with a sustained vowel of a recorded unison choir. The processing algorithm is based on the rigid phase-locked vocoder adapted to harmonic sounds. The morph combines the pitch and smoothed timbre of the voice solo with the local spectrum of the unison choir.},
+	author = {Bonada, Jordi},
+	year = {2005},
+	pages = {4}
+}
+
+@article{cano_voice_2002,
+	title = {Voice {Morphing} {System} for {Impersonating} in {Karaoke} {Applications}},
+	abstract = {In this paper we present a real-time system for morphing two voices in the context of a karaoke application. As the user sings a pre-established song, his pitch, timbre, vibrato and articulation can be modified to resemble those of a pre-recorded and pre-analyzed recording of the same melody sang by another person. The underlying analysis/synthesis technique is based on SMS, to which many changes have been done to better adapt it to the singing voice and the real-time constrains of the system. Also a recognition and alignment module has been added for the needed synchronization of the user’s voice with the target’s voice before the morph is done. There is room for imp rovements in every single module of the system, but the techniques presented have proved to be valid and capable of musically useful results.},
+	author = {Cano, Pedro and Loscos, Alex and Bonada, Jordi and de Boer, Maarten and Serra, Xavier},
+	year = {2002},
+	pages = {5}
+}
+
+@inproceedings{nishimura_singing_2016,
+	address = {Interspeech},
+	title = {Singing {Voice} {Synthesis} {Based} on {Deep} {Neural} {Networks}},
+	url = {http://www.isca-speech.org/archive/Interspeech_2016/abstracts/1027.html},
+	abstract = {Singing voice synthesis techniques have been proposed based on a hidden Markov model (HMM). In these approaches, the spectrum, excitation, and duration of singing voices are simultaneously modeled with context-dependent HMMs and waveforms are generated from the HMMs themselves. However, the quality of the synthesized singing voices still has not reached that of natural singing voices. Deep neural networks (DNNs) have largely improved on conventional approaches in various research areas including speech recognition, image recognition, speech synthesis, etc. The DNN-based text-to-speech (TTS) synthesis can synthesize high quality speech. In the DNN-based TTS system, a DNN is trained to represent the mapping function from contextual features to acoustic features, which are modeled by decision tree-clustered context dependent HMMs in the HMM-based TTS system. In this paper, we propose singing voice synthesis based on a DNN and evaluate its effectiveness. The relationship between the musical score and its acoustic features is modeled in frames by a DNN. For the sparseness of pitch context in a database, a musical-note-level pitch normalization and linear-interpolation techniques are used to prepare the excitation features. Subjective experimental results show that the DNN-based system outperformed the HMM-based system in terms of naturalness.},
+	urldate = {2020-01-09},
+	author = {Nishimura, Masanari and Hashimoto, Kei and Oura, Keiichiro and Nankaku, Yoshihiko and Tokuda, Keiichi},
+	month = sep,
+	year = {2016},
+	pages = {2478--2482}
+}
+
+@article{alzamendi_modeling_2017,
+	series = {Study of the human voice: new methodologies for a current challenge},
+	title = {Modeling and joint estimation of glottal source and vocal tract filter by state-space methods},
+	volume = {37},
+	issn = {1746-8094},
+	url = {http://www.sciencedirect.com/science/article/pii/S1746809416302348},
+	doi = {10.1016/j.bspc.2016.12.022},
+	abstract = {Accurate estimation of the glottal source from a voiced sound is a difficult blind separation problem in speech signal processing. In this work, state-space methods are investigated to enhance the joint estimation of the glottal source and the vocal tract information. The aim of this paper is twofold. First, a stochastic glottal source is proposed, based on deterministic Liljencrants–Fant model and ruled by a stochastic difference equation. Such a representation allows to accurately capture any perturbation occurring at glottal level in real voices. A state-space voice model is formulated considering the stochastic glottal source. Then, combining this voice model and the state-space framework, an inverse filtering method is developed that allows to jointly estimate both glottal source and vocal tract filter. The performance of this method is studied by means of experiments with voices synthesized by applying both the source-filter theory and a physical based voice model. The method is also test using human voice signals. The results demonstrate that accurate estimates of the glottal source and the vocal tract filter can be obtained over several scenarios. Moreover, the method is shown to be robust with respect to different phonation types.},
+	urldate = {2020-01-13},
+	journal = {Biomedical Signal Processing and Control},
+	author = {Alzamendi, Gabriel A. and Schlotthauer, Gastón},
+	month = aug,
+	year = {2017},
+	keywords = {Glottal inverse filtering, Joint source-filter estimation, State-space voice model, Stochastic glottal source},
+	pages = {5--15}
+}
+
+@article{blaauw_neural_2017,
+	title = {A {Neural} {Parametric} {Singing} {Synthesizer} {Modeling} {Timbre} and {Expression} from {Natural} {Songs}},
+	volume = {7},
+	issn = {2076-3417},
+	url = {http://www.mdpi.com/2076-3417/7/12/1313},
+	abstract = {We recently presented a new model for singing synthesis based on a modiﬁed version of the WaveNet architecture. Instead of modeling raw waveform, we model features produced by a parametric vocoder that separates the inﬂuence of pitch and timbre. This allows conveniently modifying pitch to match any target melody, facilitates training on more modest dataset sizes, and signiﬁcantly reduces training and generation times. Nonetheless, compared to modeling waveform directly, ways of effectively handling higher-dimensional outputs, multiple feature streams and regularization become more important with our approach. In this work, we extend our proposed system to include additional components for predicting F0 and phonetic timings from a musical score with lyrics. These expression-related features are learned together with timbrical features from a single set of natural songs. We compare our method to existing statistical parametric, concatenative, and neural network-based approaches using quantitative metrics as well as listening tests.},
+	number = {12},
+	urldate = {2020-01-09},
+	journal = {Applied Sciences},
+	author = {Blaauw, Merlijn and Bonada, Jordi},
+	month = dec,
+	year = {2017},
+	pages = {1313}
+}
+
+@inproceedings{wilkins_vocalset:_2018,
+	title = {{VocalSet}: {A} {Singing} {Voice} {Dataset}},
+	abstract = {We present VocalSet, a singing voice dataset of a capella singing. Existing singing voice datasets either do not capture a large range of vocal techniques, have very few singers, or are single-pitch and devoid of musical context. VocalSet captures not only a range of vowels, but also a diverse set of voices on many different vocal techniques, sung in contexts of scales, arpeggios, long tones, and excerpts. VocalSet has recordings of 10.1 hours of 20 professional singers (11 male, 9 female) performing 17 different different vocal techniques. This data will facilitate the development of new machine learning models for singer identiﬁcation, vocal technique identiﬁcation, singing generation and other related applications. To illustrate this, we establish baseline results on vocal technique classiﬁcation and singer identiﬁcation by training convolutional network classiﬁers on VocalSet to perform these tasks.},
+	booktitle = {{ISMIR}},
+	author = {Wilkins, Julia and Seetharaman, Prem and Wahl, Alison and Pardo, Bryan},
+	year = {2018},
+	pages = {7}
+}
+
+@inproceedings{bous_analysing_2019,
+	title = {Analysing {Deep} {Learning}-{Spectral} {Envelope} {Prediction} {Methods} for {Singing} {Synthesis}},
+	url = {http://arxiv.org/abs/1903.01161},
+	abstract = {We conduct an investigation on various hyperparameters regarding neural networks used to generate spectral envelopes for singing synthesis. Two perceptive tests, where the ﬁrst compares two models directly and the other ranks models with a mean opinion score, are performed. With these tests we show that when learning to predict spectral envelopes, 2d-convolutions are superior over previously proposed 1d-convolutions and that predicting multiple frames in an iterated fashion during training is superior over injecting noise to the input data. An experimental investigation whether learning to predict a probability distribution vs. single samples was performed but turned out to be inconclusive. A network architecture is proposed that incorporates the improvements which we found to be useful and we show in our experiments that this network produces better results than other stat-of-the-art methods.},
+	urldate = {2020-01-09},
+	booktitle = {European {Signal} {Processing} {Conference}},
+	author = {Bous, Frederik and Roebel, Axel},
+	month = mar,
+	year = {2019},
+	note = {arXiv: 1903.01161},
+	keywords = {Computer Science - Sound, Electrical Engineering and Systems Science - Audio and Speech Processing}
+}
+
+@inproceedings{chandna_vocoder_2019,
+	title = {A {Vocoder} {Based} {Method} {For} {Singing} {Voice} {Extraction}},
+	url = {http://arxiv.org/abs/1903.07554},
+	abstract = {This paper presents a novel method for extracting the vocal track from a musical mixture. The musical mixture consists of a singing voice and a backing track which may comprise of various instruments. We use a convolutional network with skip and residual connections as well as dilated convolutions to estimate vocoder parameters, given the spectrogram of an input mixture. The estimated parameters are then used to synthesize the vocal track, without any interference from the backing track. We evaluate our system, through objective metrics pertinent to audio quality and interference from background sources, and via a comparative subjective evaluation. We use open-source source separation systems based on Non-negative Matrix Factorization (NMFs) and Deep Learning methods as benchmarks for our system and discuss future applications for this particular algorithm.},
+	urldate = {2020-01-09},
+	booktitle = {{IEEE} {International} {Conference} on {Acoustics}, {Speech} and {Signal} {Processing}},
+	author = {Chandna, Pritish and Blaauw, Merlijn and Bonada, Jordi and Gomez, Emilia},
+	month = apr,
+	year = {2019},
+	note = {arXiv: 1903.07554},
+	keywords = {Computer Science - Sound, Electrical Engineering and Systems Science - Audio and Speech Processing}
+}
+
+@article{chandna_wgansing:_2019,
+	title = {{WGANSing}: {A} {Multi}-{Voice} {Singing} {Voice} {Synthesizer} {Based} on the {Wasserstein}-{GAN}},
+	shorttitle = {{WGANSing}},
+	url = {http://arxiv.org/abs/1903.10729},
+	abstract = {We present a deep neural network based singing voice synthesizer, inspired by the Deep Convolutions Generative Adversarial Networks (DCGAN) architecture and optimized using the Wasserstein-GAN algorithm. We use vocoder parameters for acoustic modelling, to separate the inﬂuence of pitch and timbre. This facilitates the modelling of the large variability of pitch in the singing voice. Our network takes a block of consecutive frame-wise linguistic and fundamental frequency features, along with global singer identity as input and outputs vocoder features, corresponding to the block of features. This block-wise approach, along with the training methodology allows us to model temporal dependencies within the features of the input block. For inference, sequential blocks are concatenated using an overlap-add procedure. We show that the performance of our model is competitive with regards to the state-of-the-art and the original sample using objective metrics and a subjective listening test. We also present examples of the synthesis on a supplementary website and the source code via GitHub.},
+	urldate = {2020-01-09},
+	journal = {arXiv},
+	author = {Chandna, Pritish and Blaauw, Merlijn and Bonada, Jordi and Gomez, Emilia},
+	month = jun,
+	year = {2019},
+	note = {arXiv: 1903.10729},
+	keywords = {Computer Science - Sound, Electrical Engineering and Systems Science - Audio and Speech Processing}
+}
+
+@article{li_simultaneous_2019,
+	title = {Simultaneous {Estimation} of {Glottal} {Source} {Waveforms} and {Vocal} {Tract} {Shapes} from {Speech} {Signals} {Based} on {ARX}-{LF} {Model}},
+	issn = {1939-8115},
+	url = {https://doi.org/10.1007/s11265-019-01510-4},
+	abstract = {Estimating glottal source waveforms and vocal tract shapes is typically done by processing the speech signal using an inverse filter and then fitting the residual signal using the glottal source model. However, due to source-tract interactions, the estimation accuracy is reduced. In this paper, we propose a method to estimate glottal source waveforms and vocal tract shapes simultaneously based on an analysis-by-synthesis approach with a source-filter model constructed of an Auto-Regressive eXogenous (ARX) model and the Liljencrants-Fant (LF) model. Since the optimization of multiple parameters makes simultaneous estimation difficult, we first initialize the glottal source parameters using the inverse filter method, and then simultaneously estimate the accurate parameters of the glottal sources and the vocal tract shapes using an analysis-by-synthesis approach. Experimental results with synthetic and real speech signals showed that the proposed method has higher estimation accuracy than using the inverse filter.},
+	urldate = {2020-01-13},
+	journal = {Journal of Signal Processing Systems},
+	author = {Li, Yongwei and Sakakibara, Ken-Ichi and Akagi, Masato},
+	month = dec,
+	year = {2019}
+}
+
+@book{manning_glottal_2001,
+	title = {On {Glottal} {Source} {Shape} {Parameter} {Transformation} {Using} a {Novel} {Deterministic} and {Stochastic} {Speech} {Analysis} and {Synthesis} {System}},
+	volume = {1},
+	url = {http://www.oxfordmusiconline.com/grovemusic/view/10.1093/gmo/9781561592630.001.0001/omo-9781561592630-e-0000042130},
+	abstract = {In this paper we present a ﬂexible deterministic plus stochastic model (DSM) approach for parametric speech analysis and synthesis with high quality. The novelty of the proposed speech processing system lies in its extended means to estimate the unvoiced stochastic component and to robustly handle the transformation of the glottal excitation source. It is therefore well suited as speech system within the context of Voice Transformation and Voice Conversion. The system is evaluated in the context of a voice quality transformation on natural human speech. The voice quality of a speech phrase is altered by means of resynthesizing the deterministic component with different pulse shapes of the glottal excitation source. A subjective listening test suggests that the speech processing system is able to successfully synthesize and arise to a listener the perceptual sensation of different voice quality characteristics. Additionally, improvements of the speech synthesis quality compared to a baseline method are demonstrated.},
+	urldate = {2020-01-09},
+	publisher = {Oxford University Press},
+	author = {Manning, Peter},
+	year = {2001}
+}
+
+@article{lu_glottal_2000,
+	title = {Glottal source modeling for singing voice synthesis},
+	abstract = {Naturalness of sound quality is essential for singing-voice synthesis. Since 95\% of singing is voiced sound (Cook, 1990), the focus of this paper is to improve the naturalness of the vowel tone quality via glottal excitation modeling. We propose to use the LF-model (Fant et al., 1985) for the glottal wave shape in conjunction with pitch-synchronous, amplitude-modulated Gaussian noise, which adds an aspiration component to the glottal excitation. The associated analysis and synthesis procedures are also provided in this paper. By analyzing baritone recordings, we have found simple rules to change voice qualities from “laryngealized” (or “pressed”), to normal, to “breathy” phonation.},
+	author = {Lu, Hui-Ling and Smith, Julius O.},
+	year = {2000},
+	pages = {8}
+}
+
+@book{ljung_system_1999,
+	address = {Upper Saddle River, NJ},
+	edition = {2. ed., 8. [print.]},
+	series = {Prentice-{Hall} information and system sciences series},
+	title = {System identification: theory for the user},
+	isbn = {978-0-13-656695-3},
+	shorttitle = {System identification},
+	abstract = {Lennart Ljung, Hier auch später erschienene, unveränderte Nachdrucke, 990007307630302884},
+	publisher = {Prentice-Hall},
+	author = {Ljung, Lennart},
+	year = {1999},
+	keywords = {Systemidentifikation}
+}
+
+@article{sundberg_perceptual_1994,
+	title = {Perceptual aspects of singing},
+	volume = {8},
+	issn = {0892-1997},
+	url = {http://www.sciencedirect.com/science/article/pii/S0892199705803030},
+	doi = {10.1016/S0892-1997(05)80303-0},
+	abstract = {The relations between acoustic and perceived characteristics ofvowel sounds are demonstrated with respect to timbre, loudness, pitch, and expressive time patterns. The conditions for perceiving an ensemble of sine tones as one tone or several tones are reviewed. There are two aspects of timbre of voice sounds: vowel quality and voice quality. Although vowel quality depends mainly on the frequencies of the lowest two formants, voice quality depends mainly on the frequencies of the higher formants. In particular, the center frequency of the so-called singer's formant seems perceptually relevant. Vocal loudness, generally assumed to correspond closely to the sound pressure level, depends rather on the amplitude balance between the lower and the higher spectrum partials. The perceived pitch corresponds to the fundamental frequency, or for vibrato tones, the mean of this frequency. In rapid passages, such as coloratura singing, special patterns are used. Pitch and duration differences are categorically perceived in music. This means that small variations in tuning or duration do not affect the musical interval and the note value perceived. Categorical perception is used extensively in music performance for the purpose of musical expression because without violating the score, the singer may sharpen or flatten and lengthen or shorten the tones, thereby creating musical expression.},
+	number = {2},
+	urldate = {2020-01-14},
+	journal = {Journal of Voice},
+	author = {Sundberg, Johan},
+	month = jun,
+	year = {1994},
+	keywords = {Coloratura, Formant frequencies, Fundamental frequency, Loudness, Overtone singing synthesis, Pitch, Singing, Vibrato, Voice timbre, Vowel timbre},
+	pages = {106--122}
+}
+
+@article{drugman_glottal_2014,
+	title = {Glottal source processing: {From} analysis to applications},
+	volume = {28},
+	issn = {08852308},
+	shorttitle = {Glottal source processing},
+	url = {https://linkinghub.elsevier.com/retrieve/pii/S0885230814000229},
+	abstract = {The great majority of current voice technology applications rely on acoustic features, such as the widely used MFCC or LP parameters, which characterize the vocal tract response. Nonetheless, the major source of excitation, namely the glottal ﬂow, is expected to convey useful complementary information. The glottal ﬂow is the airﬂow passing through the vocal folds at the glottis. Unfortunately, glottal ﬂow analysis from speech recordings requires speciﬁc and complex processing operations, which explains why it has been generally avoided. This paper gives a comprehensive overview of techniques for glottal source processing. Starting from analysis tools for pitch tracking, detection of glottal closure instant, estimation and modeling of glottal ﬂow, this paper discusses how these tools and techniques might be properly integrated in various voice technology applications.},
+	number = {5},
+	urldate = {2020-01-09},
+	journal = {Computer Speech \& Language},
+	author = {Drugman, Thomas and Alku, Paavo and Alwan, Abeer and Yegnanarayana, Bayya},
+	month = sep,
+	year = {2014},
+	pages = {1117--1138}
+}
+
+@article{drugman_comparative_2012,
+	title = {A comparative study of glottal source estimation techniques},
+	volume = {26},
+	issn = {08852308},
+	url = {https://linkinghub.elsevier.com/retrieve/pii/S0885230811000210},
+	abstract = {Source-tract decomposition (or glottal ﬂow estimation) is one of the basic problems of speech processing. For this, several techniques have been proposed in the literature. However, studies comparing different approaches are almost nonexistent. Besides, experiments have been systematically performed either on synthetic speech or on sustained vowels. In this study we compare three of the main representative state-of-the-art methods of glottal ﬂow estimation: closed-phase inverse ﬁltering, iterative and adaptive inverse ﬁltering, and mixed-phase decomposition. These techniques are ﬁrst submitted to an objective assessment test on synthetic speech signals. Their sensitivity to various factors affecting the estimation quality, as well as their robustness to noise are studied. In a second experiment, their ability to label voice quality (tensed, modal, soft) is studied on a large corpus of real connected speech. It is shown that changes of voice quality are reﬂected by signiﬁcant modiﬁcations in glottal feature distributions. Techniques based on the mixed-phase decomposition and on a closed-phase inverse ﬁltering process turn out to give the best results on both clean synthetic and real speech signals. On the other hand, iterative and adaptive inverse ﬁltering is recommended in noisy environments for its high robustness.},
+	number = {1},
+	urldate = {2020-01-09},
+	journal = {Computer Speech \& Language},
+	author = {Drugman, Thomas and Bozkurt, Baris and Dutoit, Thierry},
+	month = jan,
+	year = {2012},
+	pages = {20--34}
+}
+
+@inproceedings{kim_framework_2003,
+	address = {New Paltz, NY, USA},
+	title = {A framework for parametric singing voice analysis/synthesis},
+	isbn = {978-0-7803-7850-6},
+	url = {http://ieeexplore.ieee.org/document/1285835/},
+	abstract = {The singing voice is the most variable and ﬂexible of musical instruments. All voices are capable of producing the common phonemes necessary for language understanding and communication, yet each voice possesses distinctive qualities that are seemingly independent of phonemes and words. The unique acoustic qualities of an individual singer’s voice arise from a combination of innate physical factors (e.g. vocal tract and vocal fold physiology) and time-varying characteristics of performance (e.g. pronunciation and musical expression). This research introduces a framework for singing voice analysis/synthesis that takes both physical and expressive factors into account by estimating sourceﬁlter voice model parameters (representing the physiology) and modeling the dynamic behavior of these features over time using a Hidden Markov Model (to represent aspects of expression). Historically, source and ﬁlter model features have been calculated independently, but here are estimated jointly to better model sourceﬁlter dependencies common in singing. Additionally, the vocal tract ﬁlter is estimated on a warped frequency scale, which more accurately reﬂects the frequency sensitivity of human perception. This framework has many possible applications, including singing voice analysis/synthesis and singer identiﬁcation.},
+	urldate = {2020-01-09},
+	booktitle = {{IEEE} {Workshop} on {Applications} of {Signal} {Processing} to {Audio} and {Acoustics}},
+	publisher = {IEEE},
+	author = {Kim, Y.E.},
+	year = {2003},
+	pages = {123--126}
+}
+
+@inproceedings{ramirez_general-purpose_2019,
+	title = {A general-purpose deep learning approach to model time-varying audio effects},
+	volume = {abs/1905.06148},
+	abstract = {Audio processors whose parameters are modified periodically over time are often referred as time-varying or modulation based audio effects. Most existing methods for modeling these type of effect units are often optimized to a very specific circuit and cannot be efficiently generalized to other time-varying effects. Based on convolutional and recurrent neural networks, we propose a deep learning architecture for generic black-box modeling of audio processors with long-term memory. We explore the capabilities of deep neural networks to learn such long temporal dependencies and we show the network modeling various linear and nonlinear, time-varying and time-invariant audio effects. In order to measure the performance of the model, we propose an objective metric based on the psychoacoustics of modulation frequency perception. We also analyze what the model is actually learning and how the given task is accomplished.},
+	booktitle = {International {Conference} on {Digital} {Audio} {Effects}},
+	author = {Ramírez, Marco A. Martínez and Benetos, Emmanouil and Reiss, Joshua D.},
+	year = {2019},
+	keywords = {Artificial neural network, Audio signal processing, Black box, Box modeling, Central processing unit, Deep learning, General-purpose modeling, Modulation, Nonlinear system, Psychoacoustics, Recurrent neural network, Time-invariant system}
+}
+
+@article{perrotin_use_2017,
+	title = {On the {Use} of a {Spectral} {Glottal} {Model} for the {Source}-filter {Separation} of {Speech}},
+	volume = {abs/1712.08034},
+	abstract = {The estimation of glottal flow from a speech waveform is a key method for speech analysis and parameterization. Significant research effort has been made to dissociate the first vocal tract resonance from the glottal formant (the low-frequency resonance describing the open-phase of the vocal fold vibration). However few methods cope with estimation of high-frequency spectral tilt to describe the return-phase of the vocal fold vibration, which is crucial to the perception of vocal effort. This paper proposes an improved version of the well-known Iterative Adaptive Inverse Filtering (IAIF) called GFM-IAIF. GFM-IAIF includes a full spectral model of the glottis that incorporates both glottal formant and spectral tilt features. Comparisons with the standard IAIF method show that while GFM-IAIF maintains good performance on vocal tract removal, it significantly improves the perceptive timbral variations associated to vocal effort.},
+	journal = {arXiv},
+	author = {Perrotin, Olivier and McLoughlin, Ian Vince},
+	year = {2017},
+	keywords = {Emphasis (telecommunications), Inverse filter, Iterative method, Resonance, Tract (literature), Voice analysis, Whole Earth 'Lectronic Link}
+}
+
+@inproceedings{luo_learning_2019,
+	title = {Learning {Disentangled} {Representations} of {Timbre} and {Pitch} for {Musical} {Instrument} {Sounds} {Using} {Gaussian} {Mixture} {Variational} {Autoencoders}},
+	url = {http://arxiv.org/abs/1906.08152},
+	abstract = {In this paper, we learn disentangled representations of timbre and pitch for musical instrument sounds. We adapt a framework based on variational autoencoders with Gaussian mixture latent distributions. Specifically, we use two separate encoders to learn distinct latent spaces for timbre and pitch, which form Gaussian mixture components representing instrument identity and pitch, respectively. For reconstruction, latent variables of timbre and pitch are sampled from corresponding mixture components, and are concatenated as the input to a decoder. We show the model efficacy by latent space visualization, and a quantitative analysis indicates the discriminability of these spaces, even with a limited number of instrument labels for training. The model allows for controllable synthesis of selected instrument sounds by sampling from the latent spaces. To evaluate this, we trained instrument and pitch classifiers using original labeled data. These classifiers achieve high accuracy when tested on our synthesized sounds, which verifies the model performance of controllable realistic timbre and pitch synthesis. Our model also enables timbre transfer between multiple instruments, with a single autoencoder architecture, which is evaluated by measuring the shift in posterior of instrument classification. Our in depth evaluation confirms the model ability to successfully disentangle timbre and pitch.},
+	urldate = {2020-01-09},
+	booktitle = {{ISMIR}},
+	author = {Luo, Yin-Jyun and Agres, Kat and Herremans, Dorien},
+	month = jun,
+	year = {2019},
+	note = {arXiv: 1906.08152},
+	keywords = {Computer Science - Machine Learning, Computer Science - Sound, Electrical Engineering and Systems Science - Audio and Speech Processing, Statistics - Machine Learning}
+}
+
+@inproceedings{perrotin_spectral_2019,
+	title = {A {Spectral} {Glottal} {Flow} {Model} for {Source}-filter {Separation} of {Speech}},
+	doi = {10.1109/ICASSP.2019.8682625},
+	abstract = {The estimation of glottal flow from a speech waveform is an essential technique used in speech analysis and parameterisation. Significant research effort has been addressed at separating the first vocal tract resonance from the glottal formant (the low-frequency resonance that describes the open-phase of the vocal fold vibration), but few methods are capable of estimating the high-frequency spectral tilt, characteristic of the closing phase of the vocal fold vibration (which is crucial to the perception of vocal effort). This paper proposes an improved Iterative Adaptive Inverse Filtering (IAIF) method based on a Glottal Flow Model, which we call GFM-IAIF. The proposed method models the wide-band glottis response, incorporating both glottal formant and spectral tilt characteristics. Evaluation against IAIF and recently proposed IOP-IAIF shows that, while GFM-IAIF maintains good performance on vocal tract modelling, it significantly improves the glottis model. This ensures that timbral variations associated to voice quality can be correctly attributed and described.},
+	booktitle = {{IEEE} {International} {Conference} on {Acoustics}, {Speech} and {Signal} {Processing}},
+	author = {Perrotin, Olivier and McLoughlin, Ian},
+	month = may,
+	year = {2019},
+	note = {ISSN: 1520-6149},
+	keywords = {Adaptation models, Estimation, Filtering, GFM-IAIF, Glottal flow, Glottal inverse filtering, Harmonic analysis, IOP-IAIF, Lips, Power harmonic filters, Spectral model, Spectral tilt, Vibrations, Voice quality, adaptive filters, closing phase, glottal formant, glottis model, high-frequency spectral tilt, improved Iterative Adaptive Inverse Filtering method, iterative methods, parameterisation, source-filter separation, spectral Glottal Flow Model, spectral tilt characteristics, speech analysis, speech processing, speech waveform, vocal effort, vocal fold vibration, vocal tract modelling, vocal tract resonance, wide-band glottis response},
+	pages = {7160--7164}
+}
+
+@inproceedings{guerchi_pitch-synchronous_2000,
+	title = {Pitch-synchronous linear-prediction analysis by synthesis with reduced pulse densities},
+	volume = {3},
+	doi = {10.1109/ICASSP.2000.861917},
+	abstract = {An important step toward achieving a high-quality 4 kb/s speech codec is reducing the coding-rate of the stochastic codebook component to near 2 kb/s. The increased reconstruction error in the residual that such low-rate quantization implies motivates the search for techniques that reduce the perceptibility of the errors in the reconstructed signal. Pitch-synchronous estimation of the linear-prediction filter and pitch-synchronous updating of the adaptive codebook reduce the coefficient-estimation error and increase the relative contribution of the adaptive codebook component to the synthesized signal, thereby reducing audible noise. However, pitch synchronous analysis normally results in a variable-rate coder. To obtain a fixed-rate representation, we introduce an efficient representation of the stochastic codebook component using a pulse density of one pulse per 2 ms and signed magnitudes specified by 2 bits per pulse-pair. The resulting reconstructions are evaluated for CELP coders corresponding to classical and generalized-pitch-predictor designs. In both cases speech quality comparable to 8 kb/s G.729 is achieved.},
+	booktitle = {{IEEE} {International} {Conference} on {Acoustics}, {Speech} and {Signal} {Processing}},
+	author = {Guerchi, D. and Qian, Y. and Mermelstein, P.},
+	month = jun,
+	year = {2000},
+	note = {ISSN: 1520-6149},
+	keywords = {4 kbit/s, Acoustic noise, Adaptive filters, CELP coders, Estimation error, Frequency estimation, Linear predictive coding, Quantization, Signal synthesis, Speech codecs, Speech synthesis, Stochastic processes, adaptive codebook, adaptive codes, audible noise reduction, coding-rate reduction, coefficient-estimation error, filtering theory, fixed-rate representation, linear predictive coding, linear-prediction analysis by synthesis, linear-prediction filter, low-rate quantization, pitch synchronous analysis, pitch-synchronous estimation, pitch-synchronous updating, pulse density, reconstructed signal, residual reconstruction error, signal reconstruction, signal representation, signed magnitudes, speech codec, speech codecs, speech coding, speech quality, stochastic codebook component},
+	pages = {1491--1494 vol.3}
+}
+
+@inproceedings{berezina-greene_autoregressive_2010,
+	title = {Autoregressive modeling of voiced speech},
+	doi = {10.1109/ICASSP.2010.5495058},
+	abstract = {It is well known that the classical linear predictive model for speech fails to take into account the quasi-periodic nature of the glottal flow typical of voiced speech. In this article we describe how to incorporate an estimate of the glottal flow directly into the traditional linear prediction framework, through the use of flexible basis function expansions that admit efficient estimation procedures. As we show, this not only allows for improved estimation of vocal tract transfer function parameters in a manner that is robust to pitch variation, but also precludes the need for nonlinear optimization procedures typically required in glottal waveform estimation. We illustrate our approach with experiments using synthesized and real speech waveforms, and show how it may be used to directly estimate the relative degree of voicing and aspiration present in a given utterance.},
+	booktitle = {{IEEE} {International} {Conference} on {Acoustics}, {Speech} and {Signal} {Processing}},
+	author = {Berezina-Greene, Maria and Rudoy, Daniel and Wolfe, Patrick},
+	month = apr,
+	year = {2010},
+	pages = {5042--5045}
+}
+
+@inproceedings{roddy_method_2014,
+	title = {A {Method} of {Morphing} {Spectral} {Envelopes} of the {Singing} {Voice} for {Use} with {Backing} {Vocals}},
+	booktitle = {International {Conference} on {Digital} {Audio} {Effects}},
+	author = {Roddy, Matthew and Walker, Jacqueline},
+	year = {2014}
+}
+
+@inproceedings{nakamura_singing_2019,
+	title = {Singing voice synthesis based on convolutional neural networks},
+	abstract = {The present paper describes a singing voice synthesis based on convolutional neural networks (CNNs). Singing voice synthesis systems based on deep neural networks (DNNs) are currently being proposed and are improving the naturalness of synthesized singing voices. In these systems, the relationship between musical score feature sequences and acoustic feature sequences extracted from singing voices is modeled by DNNs. Then, an acoustic feature sequence of an arbitrary musical score is output in units of frames by the trained DNNs, and a natural trajectory of a singing voice is obtained by using a parameter generation algorithm. As singing voices contain rich expression, a powerful technique to model them accurately is required. In the proposed technique, long-term dependencies of singing voices are modeled by CNNs. An acoustic feature sequence is generated in units of segments that consist of long-term frames, and a natural trajectory is obtained without the parameter generation algorithm. Experimental results in a subjective listening test show that the proposed architecture can synthesize natural sounding singing voices.},
+	booktitle = {Interspeech},
+	author = {Nakamura, Kazuhiro and Hashimoto, Kei and Oura, Keiichiro and Nankaku, Yoshihiko and Tokuda, Keiichi},
+	month = apr,
+	year = {2019}
+}
+
+@inproceedings{mehri_samplernn:_2017,
+	title = {{SampleRNN}: {An} {Unconditional} {End}-to-{End} {Neural} {Audio} {Generation} {Model}},
+	shorttitle = {{SampleRNN}},
+	url = {http://arxiv.org/abs/1612.07837},
+	abstract = {In this paper we propose a novel model for unconditional audio generation based on generating one audio sample at a time. We show that our model, which profits from combining memory-less modules, namely autoregressive multilayer perceptrons, and stateful recurrent neural networks in a hierarchical structure is able to capture underlying sources of variations in the temporal sequences over very long time spans, on three datasets of different nature. Human evaluation on the generated samples indicate that our model is preferred over competing models. We also show how each component of the model contributes to the exhibited performance.},
+	urldate = {2020-01-10},
+	booktitle = {International {Conference} on {Learning} {Representations}},
+	author = {Mehri, Soroush and Kumar, Kundan and Gulrajani, Ishaan and Kumar, Rithesh and Jain, Shubham and Sotelo, Jose and Courville, Aaron and Bengio, Yoshua},
+	month = feb,
+	year = {2017},
+	note = {arXiv: 1612.07837},
+	keywords = {Computer Science - Artificial Intelligence, Computer Science - Sound}
+}
+
+@inproceedings{loweimi_source-filter_2015,
+	title = {Source-{Filter} {Separation} of {Speech} {Signal} in the {Phase} {Domain}},
+	abstract = {Deconvolution of the speech excitation (source) and vocal tract (filter) components through log-magnitude spectral processing is well-established and has led to the well-known cepstral features used in a multitude of speech processing tasks. This paper presents a novel source-filter decomposition based on processing in the phase domain. We show that separation between source and filter in the log-magnitude spectra is far from perfect, leading to loss of vital vocal tract information. It is demonstrated that the same task can be better performed by trend and fluctuation analysis of the phase spectrum of the minimum-phase component of speech, which can be computed via the Hilbert transform. Trend and fluctuation can be separated through low-pass filtering of the phase, using additivity of vocal tract and source in the phase domain. This results in separated signals which have a clear relation to the vocal tract and excitation components. The effectiveness of the method is put to test in a speech recognition task. The vocal tract component extracted in this way is used as the basis of a feature extraction algorithm for speech recognition on the Aurora-2 database. The recognition results shows upto 8.5\% absolute improvement in comparison with MFCC features on average (0-20dB).},
+	booktitle = {Interspeech},
+	author = {Loweimi, Erfan and Barker, Jon and Hain, Thomas},
+	month = sep,
+	year = {2015}
+}
+
+@inproceedings{kalchbrenner_efficient_2018,
+	title = {Efficient {Neural} {Audio} {Synthesis}},
+	abstract = {Sequential models achieve state-of-the-art results in audio, visual and textual domains with respect to both estimating the data distribution and generating high-quality samples. Efficient sampling for this class of models has however remained an elusive problem. With a focus on text-to-speech synthesis, we describe a set of general techniques for reducing sampling time while maintaining high output quality. We first describe a single-layer recurrent neural network, the WaveRNN, with a dual softmax layer that matches the quality of the state-of-the-art WaveNet model. The compact form of the network makes it possible to generate 24kHz 16-bit audio 4x faster than real time on a GPU. Second, we apply a weight pruning technique to reduce the number of weights in the WaveRNN. We find that, for a constant number of parameters, large sparse networks perform better than small dense networks and this relationship holds for sparsity levels beyond 96\%. The small number of weights in a Sparse WaveRNN makes it possible to sample high-fidelity audio on a mobile CPU in real time. Finally, we propose a new generation scheme based on subscaling that folds a long sequence into a batch of shorter sequences and allows one to generate multiple samples at once. The Subscale WaveRNN produces 16 samples per step without loss of quality and offers an orthogonal method for increasing sampling efficiency.},
+	booktitle = {International {Conference} on {Machine} {Learning}},
+	author = {Kalchbrenner, Nal and Elsen, Erich and Simonyan, Karen and Noury, Seb and Casagrande, Norman and Lockhart, Edward and Stimberg, Florian and Oord, Aaron and Dieleman, Sander and Kavukcuoglu, Koray},
+	month = feb,
+	year = {2018}
+}
+
+@inproceedings{jinachitra_joint_2005,
+	title = {Joint estimation of glottal source and vocal tract for vocal synthesis using {Kalman} smoothing and {EM} algorithm},
+	doi = {10.1109/ASPAA.2005.1540235},
+	abstract = {In this paper, a joint parameter estimation of the derivative glottal source waveform and the vocal tract filter is presented where aspiration noise and observation noise are taken into account within a state-space model. The Rosenberg-Klatt glottal model is used in conjunction with an all-pole filter to model voice production. The EM algorithm is employed to iteratively estimate the model parameters in a maximum-likelihood sense, utilizing a Kalman smoother in the expectation step. The model and estimator allow for improved estimates of model parameters for resynthesis, yielding an output which sounds natural and remains flexible for modification, a desirable property for expressive vocal synthesis.},
+	booktitle = {{IEEE} {Workshop} on {Applications} of {Signal} {Processing} to {Audio} and {Acoustics}},
+	author = {Jinachitra, P. and Smith, J.O.},
+	month = oct,
+	year = {2005},
+	note = {ISSN: 1947-1629},
+	keywords = {Acoustic noise, Acoustic waves, EM algorithm, Kalman filters, Kalman smoothing, Music, Parameter estimation, Production, Rosenberg-Klatt glottal model, Smoothing methods, Speech enhancement, Speech synthesis, Yield estimation, all-pole filter, aspiration noise, expectation-maximisation algorithm, glottal source waveform, joint parameter estimation, maximum-likelihood sense, observation noise, smoothing methods, speech synthesis, state-space model, vocal synthesis, vocal tract filter, voice production},
+	pages = {327--330}
+}
+
+@inproceedings{engel_ddsp:_2020,
+	title = {{DDSP}: {Differentiable} {Digital} {Signal} {Processing}},
+	booktitle = {International {Conference} on {Learning} {Representations}},
+	author = {Engel, Jesse and Hantrakul, Lamtharn and Gu, Chenjie and Roberts, Adam},
+	year = {2020}
+}
+
+@book{fant_acoustic_1960,
+	address = {The Hague},
+	title = {Acoustic {Theory} of {Speech} {Production}},
+	publisher = {Mouton},
+	author = {Fant, Gunnar},
+	year = {1960}
+}
+
+@book{chiba_vowel_1942,
+	address = {Japan},
+	title = {The {Vowel} : {Its} {Nature} and {Structure}},
+	publisher = {Phonetic Society of Japan},
+	author = {Chiba, Tsutomu and Kajiyama, Masato},
+	year = {1942}
+}
+
+@inproceedings{oord_wavenet:_2016,
+	title = {{WaveNet}: {A} {Generative} {Model} for {Raw} {Audio}},
+	booktitle = {{SSW}},
+	author = {Oord, Aaron and Dieleman, Sander and Zen, Heiga and Simonyan, Karen and Vinyals, Oriol and Graves, Alex and Kalchbrenner, Nal and Senior, Andrew and Kavukcuoglu, Koray},
+	year = {2016}
+}
+
+@inproceedings{stoller_analysis_2016,
+	title = {Analysis and {Classification} of {Phonation} {Modes} {In} {Singing}},
+	abstract = {Phonation mode is an expressive aspect of the singing voice and can be described using the four categories neutral, breathy, pressed and flow. Previous attempts at automatically classifying the phonation mode on a dataset containing vowels sung by a female professional have been lacking in accuracy or have not sufficiently investigated the characteristic features of the different phonation modes which enable successful classification. In this paper, we extract a large range of features from this dataset, including specialised descriptors of pressedness and breathiness, to analyse their explanatory power and robustness against changes of pitch and vowel. We train and optimise a feed-forward neural network (NN) with one hidden layer on all features using cross validation to achieve a mean F-measure above 0.85 and an improved performance compared to previous work. Applying feature selection based on mutual information and retaining the nine highest ranked features as input to a NN results in a mean Fmeasure of 0.78, demonstrating the suitability of these features to discriminate between phonation modes. Training and pruning a decision tree yields a simple rule set based only on cepstral peak prominence (CPP), temporal flatness and average energy that correctly categorises 78\% of the recordings.},
+	booktitle = {{ISMIR}},
+	author = {Stoller, Daniel and Dixon, Simon},
+	year = {2016},
+	keywords = {Algorithm, Artificial neural network, Cepstrum, Data descriptor, Decision tree, F1 score, Feature selection, Feedforward neural network, Mutual information}
+}
+
+@inproceedings{proutskova_breathy_2012,
+	title = {Breathy or {Resonant} - {A} {Controlled} and {Curated} {Dataset} for {Phonation} {Mode} {Detection} in {Singing}},
+	abstract = {This paper presents a new reference dataset of sustained, sung vowels with attached labels indicating the phonation mode. The dataset is intended for training computational models for automated phonation mode detection. 
+ 
+Four phonation modes are distinguished by Johan Sundberg: breathy, neutral, flow (or resonant) and pressed. The presented dataset consists of ca. 700 recordings of nine vowels from several languages, sung at various pitches in various phonation modes. The recorded sounds were produced by one female singer under controlled conditions, following recommendations by voice acoustics researchers. 
+ 
+While datasets on phonation modes in speech exist, such resources for singing are not available. Our dataset closes this gap and offers researchers in various disciplines a reference and a training set. It will be made available online under Creative Commons license. Also, the format of the dataset is extensible. Further content additions and future support for the dataset are planned.},
+	booktitle = {{ISMIR}},
+	author = {Proutskova, Polina and Rhodes, Christophe and Wiggins, Geraint A. and Crawford, Tim},
+	year = {2012},
+	keywords = {Circa, Computational model, Test set}
+}
+
+@book{sundberg_science_1987,
+	address = {DeKalb, Illinois, USA},
+	title = {The {Science} of {Singing} {Voice}},
+	abstract = {Althought there are numerous books dealing with the science and acoustics of speech, there are relatively few that deal with the singing voice as distinct from the speaking voice. Now, Johan Sundberg's "The Science of the Singing Voice" illustrated with over a hundred instructive and significant diagrams and drawings thoroughly describes the structure and functions of the vocal organs in singing, from the aerodynamics of respiration through the dynamics of articulation."},
+	publisher = {Northern Illinois University Press},
+	author = {Sundberg, Johan and Rossing, Thomas D.},
+	year = {1987},
+	keywords = {Book, Singing, Situated}
+}
+
+@techreport{elie_characterisation_2009,
+	title = {Characterisation of {Vocal} {Tract} {Acoustics} in the {Case} of {Oro}-{Nasal} {Coupling}},
+	institution = {Université Pierre-et-Marie-Curie},
+	author = {Elie, Benjamin},
+	year = {2009}
+}
+
+@article{imai_spectral_1979,
+	title = {Spectral envelope extraction by improved cepstral method},
+	volume = {62-A},
+	number = {4},
+	journal = {Electronics and Communicatio},
+	author = {Imai, Satoshi and Abe, Yoshihiro},
+	year = {1979},
+	pages = {10--17}
+}
+
+@article{schwarz_concatenative_2006,
+	title = {Concatenative sound synthesis: {The} early years},
+	volume = {35},
+	shorttitle = {Concatenative sound synthesis},
+	abstract = {Abstract Concatenative sound synthesis is a promising method of musical sound synthesis with a steady stream of work and publications for over five years now. This article offers a comparative survey and taxonomy of the many different approaches to concatenative synthesis throughout the history of electronic music, starting in the 1950s, even if they weren't known as such at their time, up to the recent surge of contemporary methods. Concatenative sound synthesis methods use a large database of source sounds, segmented into units, and a unit selection algorithm that finds the units that match best the sound or musical phrase to be synthesized, called the target. The selection is performed according to the descriptors of the units. These are characteristics extracted from the source sounds, e.g. pitch, or attributed to them, e.g. instrument class. The selected units are then transformed to fully match the target specification, and concatenated. However, if the database is sufficiently large, the probabilit...},
+	number = {1},
+	journal = {Journal of New Music Research},
+	author = {Schwarz, Diemo},
+	year = {2006},
+	keywords = {Business models for open-source software, Cascading Style Sheets, Coffin-Siris syndrome, Concatenation, Concatenative programming language, Concatenative synthesis, Data descriptor, Data mining, Digital recording, Goto, High- and low-level, High-level programming language, High-level synthesis, Jaquet-Droz automata, Knowledge spillover, Linguistics, Mass storage, Matching (graph theory), Open research, Pitch (music), Selection algorithm, Speech synthesis, Sturm's theorem, Taxonomy (general), Text corpus}
+}
+
+@inproceedings{blaauw_neural_2017-1,
+	title = {A {Neural} {Parametric} {Singing} {Synthesizer}},
+	doi = {10.21437/Interspeech.2017-1420},
+	booktitle = {Interspeech 2017},
+	author = {Blaauw, Merlijn and Bonada, Jordi},
+	month = aug,
+	year = {2017},
+	pages = {4001--4005}
+}
+
+@techreport{itu-r_recommendation_bs.1116_methods_2015,
+	title = {Methods for the subjective assessment of small impairments in audio systems},
+	institution = {ITU},
+	author = {ITU-R Recommendation BS.1116},
+	year = {2015}
+}
+
+@techreport{itu-r_recommendation_bs.1534_method_2003,
+	title = {Method for the subjective assessment of intermediate quality level of coding systems},
+	abstract = {The ITU Radiocommunication Assembly, considering a) that Recommendations ITU-R BS.1116, ITU-R BS.1284, ITU-R BT.500, ITU-R BT.710 and ITU-R BT.811 as well as ITU-T Recommendations P.800, P.810 and P.830, have established methods for assessing subjective quality of audio, video and speech systems; b) that new kinds of delivery services such as streaming audio on the Internet or solid state players, digital satellite services, digital short and medium wave systems or mobile multimedia applications may operate at intermediate audio quality; c) that Recommendation ITU-R BS.1116 is intended for the assessment of small impairments and is not suitable for assessing systems with intermediate audio quality; d) that Recommendation ITU-R BS.1284 gives no absolute scoring for the assessment of intermediate audio quality; e) that ITU-T Recommendations P.800, P.810 and P.830 are focused on speech signals in a telephone environment and proved to be not sufficient for the evaluation of audio signals in a broadcasting environment; f) that the use of standardized subjective test methods is important for the exchange, compatibility and correct evaluation of the test data; g) that new multimedia services may require combined assessment of audio and video quality, recommends 1 that the testing and evaluation procedures given in Annex 1 of this Recommendation be used for the subjective assessment of intermediate audio quality.},
+	institution = {ITU},
+	author = {{ITU-R Recommendation BS.1534}},
+	year = {2003},
+	keywords = {Assembly language, Audio Media, Emoticon, MUSHRA, Multimedia, Recommender system, Score, Solid-state drive, Sound quality, Streaming media, Test data}
+}
+
+@article{bell_db_2016,
+	title = {The {dB} in the .db: {Vocaloid} {Software} as {Posthuman} {Instrument}},
+	volume = {39},
+	issn = {0300-7766},
+	shorttitle = {The {dB} in the .db},
+	url = {https://doi.org/10.1080/03007766.2015.1049041},
+	abstract = {This article presents an analysis of the Vocaloid voice synthesis software in order to explore what kind of instrument the synthetic voice is emerging to be. Vocaloid software exemplifies a database paradigm of cultural production analogous to that from which instrumental music has always drawn, but representative of a perspective on the voice as an increasingly malleable instrument. Furthermore, Vocaloid music production challenges notions of voice as revealing something essential about the body, resulting in works that subvert traditional expectations of bodies based on vocal pitch, and timbre.},
+	number = {2},
+	urldate = {2020-01-14},
+	journal = {Popular Music and Society},
+	author = {Bell, Sarah A.},
+	month = mar,
+	year = {2016},
+	pages = {222--240}
+}
+
+@article{mcloughlin_review_2008,
+	title = {A review of line spectral pairs},
+	volume = {88},
+	issn = {0165-1684},
+	url = {http://www.sciencedirect.com/science/article/pii/S0165168407003167},
+	number = {3},
+	journal = {Signal Processing},
+	author = {McLoughlin, Ian Vince},
+	year = {2008},
+	pages = {448 -- 467}
+}
+
+@article{engel_neural_2017,
+	title = {Neural {Audio} {Synthesis} of {Musical} {Notes} with {WaveNet} {Autoencoders}},
+	shorttitle = {{NSynth}},
+	abstract = {Generative models in vision have seen rapid progress due to algorithmic improvements and the availability of high-quality image datasets. In this paper, we offer contributions in both these areas to enable similar progress in audio modeling. First, we detail a powerful new WaveNet-style autoencoder model that conditions an autoregressive decoder on temporal codes learned from the raw audio waveform. Second, we introduce NSynth, a large-scale and high-quality dataset of musical notes that is an order of magnitude larger than comparable public datasets. Using NSynth, we demonstrate improved qualitative and quantitative performance of the WaveNet autoencoder over a well-tuned spectral autoencoder baseline. Finally, we show that the model learns a manifold of embeddings that allows for morphing between instruments, meaningfully interpolating in timbre to create new types of sounds that are realistic and expressive.},
+	author = {Engel, Jesse and Resnick, Cinjon and Roberts, Adam and Dieleman, Sander and Eck, Douglas and Simonyan, Karen and Norouzi, Mohammad},
+	month = apr,
+	year = {2017}
+}
+
+@phdthesis{fonseca_nuno_singing_2011,
+	title = {Singing	{Voice} {Resynthesis} using {Concatenative}-based {Techniques}},
+	author = {Fonseca, Nuno},
+	year = {2011}
+}
+
+@phdthesis{kim_singing_2003,
+	title = {Singing {Voice} {Analysis}/{Synthesis}},
+	abstract = {The singing voice is the oldest and most variable of musical instruments. By combin-ing music, lyrics, and expression, the voice is able to affect us in ways that no other instrument can. As listeners, we are innately drawn to the sound of the human voice, and when present it is almost always the focal point of a musical piece. But the acoustic flexibility of the voice in intimating words, shaping phrases, and conveying emotion also makes it the most difficult instrument to model computationally. Moreover, while all voices are capable of producing the common sounds necessary for language under-standing and communication, each voice possesses distinctive features independent of phonemes and words. These unique acoustic qualities are the result of a combination of innate physical factors and expressive characteristics of performance, reflecting an individual's vocal identity. A great deal of prior research has focused on speech recognition and speaker identi-fication, but relatively little work has been performed specifically on singing. There are significant differences between speech and singing in terms of both production and},
+	author = {Kim, Youngmoo Edmund},
+	year = {2003}
+}
+
+@phdthesis{ozer_serkan_f0_2015,
+	title = {F0 {Modeling} {For} {Singing} {Voice} {Synthesizers} with {LSTM} {Recurrent} {Neural} {Networks}},
+	author = {{Özer, Serkan}},
+	year = {2015}
+}
+
+@inproceedings{venkataramani_time-varying_2018,
+	title = {Time-{Varying} {Modeling} of {Glottal} {Source} and {Vocal} {Tract} and {Sequential} {Bayesian} {Estimation} of {Model} {Parameters} for {Speech} {Synthesis}},
+	abstract = {Speech is generated by articulators acting on a phonatory source. Identification of this phonatory source and articulatory geometry are individually challenging and ill-posed problems, called speech separation and articulatory inversion, respectively. There exists a trade-off between decomposition and recovered articulatory geometry due to multiple possible mappings between an articulatory configuration and the speech produced. However, if measurements are obtained only from a microphone sensor, they lack any invasive insight and add additional challenge to an already difficult problem. A joint non-invasive estimation strategy that couples articulatory and phonatory knowledge would lead to better articulatory speech synthesis. In this thesis, a joint estimation strategy for speech separation and articulatory geometry recovery is studied. Unlike previous periodic/aperiodic decomposition methods that use stationary speech models within a frame, the proposed model presents a nonstationary speech decomposition method. A parametric glottal source model and an articulatory vocal tract response are represented in a dynamic state space formulation. The unknown parameters of the speech generation components are estimated using sequential Monte Carlo methods under some specific assumptions. The proposed approach is compared with other glottal inverse filtering methods, including iterative adaptive inverse filtering, state-space inverse filtering, and the quasi-closed phase method.},
+	author = {Venkataramani, Adarsh Akkshai},
+	year = {2018},
+	keywords = {Articulators, Articulatory synthesis, Inverse filter, Iterative method, Microphone Device Component, Monte Carlo method, Open-source software, Particle filter, Population Parameter, Speech synthesis, State space, State-space representation, Stationary process, Tract (literature), Vocal Cord Paralysis, Well-posed problem}
+}
+
+@inproceedings{hahn_extended_2012,
+	title = {Extended {Source}-{Filter} {Model} of {Quasi}-{Harmonic} {Instruments} for {Sound} {Synthesis}, {Transformation} and {Interpolation}},
+	abstract = {In this paper we present a new technique for sample-based sound synthesis. The approach comprises the analysis of sounds of an instruments sound database, a parameter estimation for an instrument model and a sound synthesis using this model together with the analyzed sounds. The analysis of the sounds is carried out by the segregation of each sound into a sinusoidal and noise component and extracting certain control parameters from both. The components will be modeled using an extended source-filter model, whereas the harmonic component will be represented by a non-white source and a resonator filter and the noise component by a single filter. Model parameters are represented by means of weights of tensor product B-splines (basic-splines) covering the instruments sound characteristics over its full pitch range, global intensities and the sounds temporal evolution. This structured sound representation will allow enhanced source filter based sound manipulations. The paper concludes with a subjective evaluation presented for comparison with state of the art sound transformations.},
+	author = {Hahn, Henrik and Röbel, Axel},
+	year = {2012},
+	keywords = {Ambiguous name resolution, B-spline, Estimation theory, Instrument - device, Interpolation Imputation Technique, Population Parameter, Resonator Device Component, anatomical layer, cell transformation}
+}
+
+@inproceedings{le_examining_2015,
+	title = {Examining the {Rise} of {Hatsune} {Miku} : {The} {First} {International} {Virtual} {Idol}},
+	shorttitle = {Examining the {Rise} of {Hatsune} {Miku}},
+	abstract = {F a c u l t y M e n t o r},
+	author = {Le, Linh Thi Khanh},
+	year = {2015}
+}
+@inproceedings{smith_toward_2002,
+	title = {Toward a high-quality singing synthesizer with vocal texture control},
+	abstract = {Spectral modeling and physical modeling have been used in the past to achieve high-quality singing synthesis. However, spectral models are known to be difficult to articulate and are therefore relatively limited in expressivity. On the other hand, it is not straight forward to adjust physical model parameters to reproduce a specific recording. In this thesis, a high-quality singing synthesizer is proposed with an associated analysis procedure to retrieve the model parameters automatically from the desired voices. Since over 90\% of singing is voiced sound, the focus of this research is to improve naturalness of the vowel tone quality. In addition, an intuitive parametric model is developed to control the vocal textures of the synthetic voices ranging from “pressed,” to “normal,” to “breathy” phonation. 
+To trade-off between complexity of the model and the corresponding analysis procedure, a source-filter synthesis model is proposed. Based on a simplified human voice production system, the source-filter synthesis model describes human voices as the output of the vocal tract filter excited by a glottal excitation. The vocal tract is modeled as an all-pole filter which has often been used in the past to model non-nasal voiced sound. To accommodate variations in vocal textures, the glottal excitation model employs two elements: a parametric derivative-glottal-wave and modulated aspiration noise. The derivative glottal wave is given by the transformed Liljencrants-Fant (LF) model. The aspiration noise is represented as pitch-synchronous, amplitude-modulated Gaussian noise. 
+A major contribution of this thesis is the development of an analysis procedure that estimates the parameters of the proposed synthesis model to mimic desired voices. First, a source-filter deconvolution algorithm based on convex optimization techniques is proposed to estimate the vocal tract filter from sound recordings. Second, the inverse-filtered glottal excitation is decomposed into a smoothed derivative glottal wave and a noise residual component using Wavelet Packet Analysis, through which proper parameterizations of the glottal excitation can then be found. Finally, baritone recordings are analyzed to construct a parametric model for controlling vocal textures in synthesized singing.},
+	author = {Smith, Julius O. and Lu, Hui-Ling},
+	year = {2002},
+	keywords = {Singing, Speech synthesis}
+}
+
+@article{schleusing_joint_2013,
+	title = {Joint {Source}-{Filter} {Optimization} for {Accurate} {Vocal} {Tract} {Estimation} {Using} {Differential} {Evolution}},
+	volume = {21},
+	issn = {1558-7924},
+	doi = {10.1109/TASL.2013.2255275},
+	abstract = {In this work, we present a joint source-filter optimization approach for separating voiced speech into vocal tract (VT) and voice source components. The presented method is pitch-synchronous and thereby exhibits a high robustness against vocal jitter, shimmer and other glottal variations while covering various voice qualities. The voice source is modeled using the Liljencrants-Fant (LF) model, which is integrated into a time-varying auto-regressive speech production model with exogenous input (ARX). The non-convex optimization problem of finding the optimal model parameters is addressed by a heuristic, evolutionary optimization method called differential evolution. The optimization method is first validated in a series of experiments with synthetic speech. Estimated glottal source and VT parameters are the criteria used for comparison with the iterative adaptive inverse filter (IAIF) method and the linear prediction (LP) method under varying conditions such as jitter, fundamental frequency (f0) as well as environmental and glottal noise. The results show that the proposed method largely reduces the bias and standard deviation of estimated VT coefficients and glottal source parameters. Furthermore, the performance of the source-filter separation is evaluated in experiments using speech generated with a physical model of speech production. The proposed method reliably estimates glottal flow waveforms and lower formant frequencies. Results obtained for higher formant frequencies indicate that research on more accurate voice source models and their interaction with the VT is necessary to improve the source-filter separation. The proposed optimization approach promises to be a useful tool for future research addressing this topic.},
+	number = {8},
+	journal = {IEEE Transactions on Audio, Speech, and Language Processing},
+	author = {Schleusing, Olaf and Kinnunen, Tomi and Story, Brad and Vesin, Jean-Marc},
+	month = aug,
+	year = {2013},
+	keywords = {ARX, Estimation, Global optimization, Joints, LF model, Liljencrants-Fant model, Mathematical model, Optimization, Production, Speech, VT parameter estimation, Vectors, autoregressive processes, bias reduction, concave programming, differential evolution, environmental noise, evolutionary computation, evolutionary optimization method, exogenous input, glottal inverse filtering, glottal noise, glottal source parameter estimation, glottal variation, heuristic, joint source-filter optimization, nonconvex optimization problem, optimal model parameter, parameter estimation, pitch-synchronous method, shimmer, source separation, source-filter separation, speech generation, speech synthesis, standard deviation, synthetic speech, time-varying auto-regressive speech production model, time-varying vocal tract estimation, vocal jitter, vocal tract estimation, voice source component, voiced speech separation},
+	pages = {1560--1572}
+}
+
+@article{ramirez_modeling_2019,
+	title = {Modeling plate and spring reverberation using a {DSP}-informed deep neural network},
+	volume = {abs/1910.10105},
+	journal = {ArXiv},
+	author = {Ramírez, Marco A. Martínez and Benetos, Emmanouil and Reiss, Joshua D.},
+	year = {2019}
+}
+
+@inproceedings{engel_gansynth:_2019,
+	title = {{GANSynth}: {Adversarial} {Neural} {Audio} {Synthesis}},
+	url = {https://openreview.net/pdf?id=H1xQVn09FX},
+	author = {Engel, Jesse and Agrawal, Kumar Krishna and Chen, Shuo and Gulrajani, Ishaan and Donahue, Chris and Roberts, Adam},
+	year = {2019}
+}
+
+@article{arik_neural_2018,
+	title = {Neural {Voice} {Cloning} with a {Few} {Samples}},
+	abstract = {Voice cloning is a highly desired feature for personalized speech interfaces. Neural network based speech synthesis has been shown to generate high quality speech for a large number of speakers. In this paper, we introduce a neural voice cloning system that takes a few audio samples as input. We study two approaches: speaker adaptation and speaker encoding. Speaker adaptation is based on fine-tuning a multi-speaker generative model with a few cloning samples. Speaker encoding is based on training a separate model to directly infer a new speaker embedding from cloning audios and to be used with a multi-speaker generative model. In terms of naturalness of the speech and its similarity to original speaker, both approaches can achieve good performance, even with very few cloning audios. While speaker adaptation can achieve better naturalness and similarity, the cloning time or required memory for the speaker encoding approach is significantly less, making it favorable for low-resource deployment.},
+	author = {Arik, Sercan and Chen, Jitong and Peng, Kainan and Ping, Wei and Zhou, Yanqi},
+	month = feb,
+	year = {2018}
+}
+
+@phdthesis{ardaillon_synthesis_2017,
+	title = {Synthesis and expressive transformation of singing voice},
+	abstract = {This thesis aimed at conducting research on the synthesis and expressive transformations of the singing voice, towards the development of a high-quality synthesizer that can generate a natural and expressive singing voice automatically from a given score and lyrics. Mainly 3 research directions can be identified: the methods for modelling the voice signal to automatically generate an intelligible and natural-sounding voice according to the given lyrics; the control of the synthesis to render an adequate interpretation of a given score while conveying some expressivity related to a specific singing style; the transformation of the voice signal to improve its naturalness and add expressivity by varying the timbre adequately according to the pitch, intensity and voice quality. This thesis provides some contributions in each of those 3 directions. First, a fully-functional synthesis system has been developed, based on diphones concatenations. The modular architecture of this system allows to integrate and compare different signal modeling approaches. Then, the question of the control is addressed, encompassing the automatic generation of the f0, intensity, and phonemes durations. The modeling of specific singing styles has also been addressed by learning the expressive variations of the modeled control parameters on commercial recordings of famous French singers. Finally, some investigations on expressive timbre transformations have been conducted, for a future integration into our synthesizer. This mainly concerns methods related to intensity transformation, considering the effects of both the glottal source and vocal tract, and the modeling of vocal roughness.},
+	author = {Ardaillon, Luc},
+	month = nov,
+	year = {2017}
+}
+
+@phdthesis{hahn_expressive_2015,
+	type = {{PhD} {Thesis}},
+	title = {Expressive sampling synthesis. {Learning} extended source-filter models from instrument sound databases for expressive sample manipulations},
+	author = {Hahn, Henrik},
+	year = {2015}
+}
+
+@inproceedings{walker_review_2005,
+	title = {A {Review} of {Glottal} {Waveform} {Analysis}},
+	volume = {4391},
+	doi = {10.1007/978-3-540-71505-4_1},
+	abstract = {Glottal inverse filtering is of potential use in a wide range of speech processing applications. As the process of voice production
+is, to a first order approximation, a source-filter process, then obtaining source and filter components provides for a flexible
+representation of the speech signal for use in processing applications. In certain applications the desire for accurate inverse
+filtering is more immediately obvious, e.g., in the assessment of laryngeal aspects of voice quality and for correlations
+between acoustics and vocal fold dynamics, the resonances of the vocal tract should firstly be removed. Similarly, for assessment
+of vocal performance, trained singers may wish to obtain quantitative data or feedback regarding their voice at the level
+of the larynx.},
+	author = {Walker, Jacqueline and Murphy, Peter},
+	month = jan,
+	year = {2005},
+	pages = {1--21}
+}
+
+@inproceedings{vincent_new_2007,
+	title = {A {New} {Method} for {Speech} {Synthesis} and {Transformation} {Based} on an {ARX}-{LF} {Source}-{Filter} {Decomposition} and {HNM} {Modeling}},
+	volume = {4},
+	isbn = {978-1-4244-0728-6},
+	doi = {10.1109/ICASSP.2007.366965},
+	abstract = {In this paper a new method for speech synthesis is proposed. It relies on a source-filter decomposition of the speech signal by means of an ARX-LF model. This model allows the representation of the glottal signal as the sum of an LF waveform and a residual signal. The residual information is then analyzed by HNM. This signal representation enables high quality speech modification such as pitch, duration or even voice quality transformation. Experiments performed on a real speech database show the relevance of the proposed method as compared to other existing approaches},
+	author = {Vincent, Damien and Rosec, Olivier and Chonavel, T.},
+	month = may,
+	year = {2007},
+	pages = {IV--525}
+}
+
+@article{sundberg_raised_1976,
+	title = {Raised and lowered larynx - {The} effect on vowel formant frequencies},
+	volume = {6},
+	journal = {STL-QPSR},
+	author = {Sundberg, Johan and Nordström, P.-E},
+	month = jan,
+	year = {1976},
+	pages = {35--39}
+}
+
+@article{cleveland_acoustic_1974,
+	title = {The acoustic properties of voice timbre types and their importance in the determination of voice classification in male singers /},
+	abstract = {Thesis--University of Southern California. Bibliography: leaves 469-473. Microfilm of typescript. University of Southern California University Library Photoduplication Service. -- 1 reel ; 35 mm.},
+	author = {Cleveland, Thomas},
+	year = {1974}
+}
+
+@inproceedings{milner_speech_2002,
+	title = {Speech reconstruction from mel-frequency cepstral coefficients using a source-filter model.},
+	abstract = {This work presents a method of reconstructing a speech signal from a stream of MFCC vectors using a source-filter model of speech production. The MFCC vectors are used to provide an estimate of the vocal tract filter. This is achieved by inverting the MFCC vector back to a smoothed estimate of the magnitude spectrum. The Wiener-Khintchine theorem and linear predictive analysis transform this into an estimate of the vocal tract filter coefficients. The excitation signal is produced from a series of pitch pulses or white noise, depending on whether the speech is voiced or unvoiced. This pitch estimate forms an extra element of the feature vector. Listening tests reveal that the reconstructed speech is intelligible and of similar quality to a system based on LPC analysis of the original speech. Spectrograms of the MFCC-derived speech and the real speech are included which confirm the similarity.},
+	author = {Milner, Ben and Shao, Xu},
+	month = jan,
+	year = {2002}
+}
+
+@article{rodet_synthesis_2002,
+	title = {Synthesis {And} {Processing} {Of} {The} {Singing} {Voice}},
+	abstract = {As soon as the beginning of the 60s,the singing voice have been synthesized by computer. Since these first experiments, the musical and natural quality of singing voice synthesis has largely improved and high quality commercial applications can be envisioned for a near future. This talk gives an overview of synthesis methods, control strategies and research in this field. Future challenges include synthesizer models improvements, automatic estimation of model parameter values from recordings, learning techniques for automatic rule construction and gaining a better understanding of the technical, acoustical and interpretive aspects of the singing voice 1.},
+	author = {Rodet, Xavier},
+	month = dec,
+	year = {2002}
+}
+
+@article{itakura_line_1975,
+	title = {Line {Spectrum} {Representation} of {Linear} {Predictor} {Coefficients} of {Speech} {Signals}},
+	volume = {57},
+	doi = {10.1121/1.1995189},
+	number = {S1},
+	journal = {The Journal of the Acoustical Society of America},
+	author = {Itakura, Fumitada},
+	year = {1975},
+	pages = {S35--S35}
+}
+
+@inproceedings{huber_voice_2015,
+	title = {Voice quality transformation using an extended source-filter speech model},
+	abstract = {In this paper we present a flexible framework for paramet-ric speech analysis and synthesis with high quality. It constitutes an extended source-filter model. The novelty of the proposed speech processing system lies in its extended means to use a Deterministic plus Stochastic Model (DSM) for the estimation of the unvoiced stochastic component from a speech recording. Further contributions are the efficient and robust means to extract the Vocal Tract Filter (VTF) and the modelling of energy variations. The system is evaluated in the context of two voice quality transformations on natural human speech. The voice quality of a speech phrase is altered by means of re-synthesizing the deterministic component with different pulse shapes of the glottal excitation source. A Gaussian Mixture Model (GMM) is used in one test to predict energies for the re-synthesis of the deterministic and the stochastic component. The subjective listening tests suggests that the speech processing system is able to successfully synthesize and arise to a listener the perceptual sensation of different voice quality characteristics. Additionally, improvements of the speech synthesis quality compared to a baseline method are demonstrated.},
+	author = {Huber, Stefan and Roebel, Axel},
+	month = jul,
+	year = {2015}
+}
+
+@inproceedings{blaauw_data_2019,
+	title = {Data {Efficient} {Voice} {Cloning} for {Neural} {Singing} {Synthesis}},
+	doi = {10.1109/ICASSP.2019.8682656},
+	author = {Blaauw, Merlijn and Bonada, Jordi and Daido, Ryunosuke},
+	year = {2019},
+	pages = {6840--6844}
+}
+
+@article{erickson_acoustic_2016,
+	title = {Acoustic {Properties} of the {Voice} {Source} and the {Vocal} {Tract}: {Are} {They} {Perceptually} {Independent}?},
+	volume = {30},
+	doi = {10.1016/j.jvoice.2015.11.010},
+	journal = {Journal of Voice},
+	author = {Erickson, Molly},
+	year = {2016}
+}
+
+@article{dollinger_influence_2006,
+	title = {The influence of epilarynx area on vocal fold dynamics},
+	volume = {135},
+	doi = {10.1016/j.otohns.2006.04.007},
+	journal = {Otolaryngology–head and neck surgery : official journal of American Academy of Otolaryngology-Head and Neck Surgery},
+	author = {Döllinger, Michael and Berry, David and Montequin, Douglas},
+	year = {2006},
+	pages = {724--729}
+}
+
+@incollection{serra_musical_1997,
+	title = {Musical {Sound} {Modeling} with {Sinusoids} plus {Noise}},
+	isbn = {90 265 1482 4},
+	author = {Serra, Xavier},
+	year = {1997},
+	pages = {91--122}
+}
+
+@article{serra_spectral_1990,
+	title = {Spectral {Modeling} {Synthesis}},
+	volume = {14},
+	journal = {Computer Music Journal},
+	author = {Serra, Xavier and Smith, Julius},
+	year = {1990}
+}
+@article{fant_lf-model_1995,
+	title = {The {LF}-model revisited. {Transformations} and frequency domain analysis},
+	volume = {2-3},
+	journal = {KTH, Speech Transmission Laboratory, Quarterly Report},
+	author = {Fant, G and Liljencrants, J and Lin, Qiguang},
+	year = {1995},
+	pages = {119--156}
+}
+
+@article{makhoul_linear_1975,
+	title = {Linear prediction: {A} tutorial review},
+	volume = {63},
+	issn = {1558-2256},
+	doi = {10.1109/PROC.1975.9792},
+	number = {4},
+	journal = {Proceedings of the IEEE},
+	author = {Makhoul, John},
+	year = {1975},
+	pages = {561--580}
+}
+
+@article{dudley_vocoder_1939,
+	title = {The {Vocoder}},
+	volume = {18},
+	number = {2},
+	journal = {Bell Labs Rec},
+	author = {Dudley, Homer},
+	year = {1939},
+	pages = {122--126}
+}
+
+@article{dudley_remaking_1939,
+	title = {Remaking {Speech}},
+	volume = {11},
+	doi = {10.1121/1.1916020},
+	number = {2},
+	journal = {The Journal of the Acoustical Society of America},
+	author = {Dudley, Homer},
+	year = {1939},
+	pages = {169--177}
+}
+
+@article{fant_four-parameter_1985,
+	title = {A {Four}-{Parameter} {Model} of {Glottal} {Flow}},
+	volume = {4},
+	journal = {STL-QPSR},
+	author = {Fant, G. and Liljencrants, J. and Lin, Qiguang},
+	year = {1985}
+}

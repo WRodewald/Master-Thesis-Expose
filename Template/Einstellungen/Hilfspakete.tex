@@ -1,0 +1,100 @@
+% Paket für schnellen Beispieltext zum Füllen
+%\usepackage{blindtext}
+% Aus der Hilfe:
+% \blindtext creates some text,
+% \Blindtext creates more text.
+% \blinddocument creates a small document with sections, lists...
+% \Blinddocument creates a large document with sections, lists...
+
+% Gant Diagram  (MAX)
+\usepackage{pgfgantt}
+
+% Linebreak in Table
+\usepackage{makecell}
+
+% Tabellen
+\usepackage{tabularx,ragged2e}
+%\newcolumntype{C}{>{\Centering\arraybackslash}X}
+
+% Wichtige Macro-Definitionen 
+\usepackage{etoolbox}
+% Z. B. wichtig für logische Abfragen:
+% \ifstrequal{String}{Vergleichstring}{...passiert when gleich}{...ansonsten}
+% Anderes Beispiel, s. "Anpassen der Tiefe von nummerierten Überschriften" in Satzeinstellungen
+
+% Weitertes Macro-Paket. Zwar depreciated, dennoch benötigt, da es in Skripten Kommandos auflöst
+\usepackage{ifthen}
+% Bsp: \ifthenelse{\equal{\kommando1}{\kommando2}}{true}{false}
+
+% Ermöglicht das Verwenden von Listen mit kleineren vertikalen Abständen
+\usepackage{mdwlist}
+% Statt itemize einfach itemize* verwenden. Analog dazu existiert enumerate* und description*
+% Diese Umbegungen erlauben auch Unterbrechungen, z. B.  mit \suspend{itemize*} bla bla \resume{itemize*}
+
+%Bei Itemize davor und danach größere Abstände
+\usepackage{enumitem}
+\setlist[itemize]{topsep=5pt}
+
+%Das gleiche für Quotes
+\usepackage{quoting}
+\quotingsetup{vskip=5pt}
+
+% Ermöglicht erweiterte Referenzen. Soweit angepasst, dass schöne Makros möglich sind (siehe Kommando-Definitionen)
+\usepackage[english]{varioref}
+\renewcommand*{\reftextfaraway}[1]{auf S.\,\pageref{#1}}%
+\renewcommand*{\reftextcurrent}{\unskip}%
+% generell neu: \vpageref, \vref und \vref*, diese Referenzierungen geben die Seite mit an
+
+% Ermöglichung von Unterabbildungen
+\usepackage{subfig}
+% Verwendung in figure: \subfloat[Optionaler Verzeichnistext][Unterschrift \label{sfig:bla}]{...Zeug...}
+
+% Das normgerechte Eurozeichen
+\usepackage{eurosym}
+% Verwendung mit \euro
+
+% Kommandos nach Ende einer Seite absetzen
+\usepackage{afterpage} 
+% Wichtigste Anwendung ist das Flushen von Floats: \afterpage{\clearpage}
+
+ % Nassi-Schneidermann Unterstützung
+%\usepackage{Template/Pakete/nassi}
+%\setiftext{W}{F}
+%\nassiwidth=\textwidth
+% Wichtige Befehle:
+% \NSD{}
+% \WHILE{Text}{} \ENDWHILE
+% \ACTION{Text}
+
+% Einrahmen von Text
+%\usepackage{framed}
+%\addtolength{\FrameRule}{1pt} % dickeren Rahmen
+% Verwendung: \begin{framed} ... \end{framed}
+
+%Anhang
+\usepackage[title]{appendix}
+
+%Runden
+\usepackage{xparse}
+
+\ExplSyntaxOn
+\DeclareExpandableDocumentCommand \ceil { O{0} m }
+{ \fp_eval:n { ceil(#2,#1) } }
+\ExplSyntaxOff
+
+\ExplSyntaxOn
+\DeclareExpandableDocumentCommand \floor { O{0} m }
+{ \fp_eval:n { floor(#2,#1) } }
+\ExplSyntaxOff
+
+% Table Caption Distance
+%\usepackage{caption}
+%\captionsetup[table]{skip=10pt}
+
+% Max Weber
+\usepackage[nodayofweek]{datetime}
+\usepackage{layouts}
+\usepackage{mathrsfs}
+
+% nicer inverse
+\newcommand{\inv}{^{\raisebox{.2ex}{$\scriptscriptstyle-1$}}}

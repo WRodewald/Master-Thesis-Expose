@@ -1,0 +1,59 @@
+\usepackage[utf8]{inputenc}
+%\usepackage[russian,german,ngerman]{babel}
+
+% Titelei
+\newcommand*{\Titel}{Efficient Singing Voice Synthesis}
+\newcommand*{\PdfTitel}{Efficient Singing Voice Synthesis}
+\newcommand*{\Untertitel}{William Rodewald}
+% Header-Titel
+\newcommand*{\HeaderTitel}{Master Thesis Proposal}
+
+% Hauptautor
+\newcommand*{\Autor}{William Rodewald}
+\newcommand*{\AutorMatrikelNr}{372193}
+
+% Manuell gesetztes Datum mit Ort
+\newcommand*{\Datum}{Berlin, \today}
+
+% Uni, Fakultät, Institut und Fachgebiet
+\newcommand*{\Uni}{Technische Universität Berlin}
+\newcommand*{\Fakultaet}{Fakultät I}
+\newcommand*{\Institut}{Institut für Sprache und Kommunikation}
+\newcommand*{\Fachgebiet}{Fachgebiet Audiokommunikation}
+
+% Professor und Betreuer
+\newcommand*{\Professor}{Prof. Dr. Stefan Weinzierl}
+\newcommand*{\BetreuerA}{Dr. Henrik Hahn}
+\newcommand*{\InstitutA}{Fachgebiet Audiokommunikation}
+\newcommand*{\InstitutB}{Ableton AG}
+
+% Weitere Autoren 
+%\newcommand*{\AutorB}{William Rodewald}
+%\newcommand*{\AutorBMatrikelNr}{372193}
+
+%\newcommand*{\AutorC}{Maximilian Weber}
+%\newcommand*{\AutorCMatrikelNr}{385153}
+
+
+% Gruppenangabe oder nur "vorgelegt von:" schreiben.
+\newcommand*{\Gruppe}{vorgelegt von:}
+
+% Einstellen der Druckversion: Drucken oder PDF-Ansicht allein
+\def\typeDrucken{1}  % Für Drucken (nicht ändern)
+\def\typePDFonly{2}  % Für reine PDF-Verwendung (nicht ändern)
+% Hier den passenden Schalter setzen! =\typeDrucken oder =\typePDFonly
+\let\pdftype=\typePDFonly
+
+% Definition, ob ein- oder zweiseitig gesetzt werden soll
+\def\typeOnepage{1}  % Für einseigen Satz
+\def\typeTwopage{2}  % Für zweiseitgen Satz
+% Hier den passenden Schalter setzen! =\typeOnepage oder =\typeTwopage
+\let\pagetype=\typeOnepage
+
+% Bindekorrektur am inneren Rand
+\newlength{\bindCorrection} 				%Deklaration, nicht ändern
+\setlength{\bindCorrection}{0cm} 			%Zuweisung, kann geändert werden
+
+% PDF-Ausgabe-Version über Minor-Nummer => 1.x
+\pdfminorversion=5
+\pdfcompresslevel=9

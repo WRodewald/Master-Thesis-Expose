@@ -1,0 +1,42 @@
+Kompilierung für externalize:
+
+pdflatex.exe -synctex -interaction=nonstopmode --shell-escape %.tex
+Package tikz Error: Sorry, the system call 'pdflatex -shell-escape -halt-on-e
+
+Einbinden von natbibspacing.sty durch schieben in Natbib-Ordner und Refresh FNDB in miktex.
+
+Einbinden von unsrtdin.bst durch kopieren hierher: C:\Program Files (x86)\MiKTeX 2.9\bibtex\bst\din1505
+
+
+\begin{figure}[!htbp]
+	\centering
+	\begin{tikzpicture}
+	\begin{axis}[
+	axis line style = thick,
+	enlargelimits=false,
+	legend image post style={line width=1pt},
+	legend style={row sep=2pt},
+	legend cell align=left,
+	legend pos=south east,
+	reverse legend,
+	%xmin=0, xmax=1500,
+	%restrict y to domain=-200:200,
+	%ymin=-20, ymax=20,
+	scaled y ticks = false,
+	y tick label style={/pgf/number format/fixed},
+	%xtick={0,400,800,1200},
+	xlabel=$x$,
+	x post scale=1.9,
+	y post scale=2,
+	ylabel=$y$,
+	ylabel style={rotate=-90},
+	unbounded coords=jump,
+	grid=major,
+	]
+	\addplot[red] file {Data/Zughakenlast_SBB.dat};
+	\addplot[blue] file {Data/F_z_zul_SBB.dat};
+	\end{axis}
+	\end{tikzpicture}
+	\caption{Zughakenlast und $F_z$ in Abhängigkeit der Steigung}
+	\label{fig:reibwerts}
+\end{figure}

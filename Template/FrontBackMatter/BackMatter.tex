@@ -1,0 +1,46 @@
+% Römische Zahlen für Back Matter - Seitenzahl an Front Matter anschließen
+\pagenumbering{arabic}
+\addtocounter{Seitenzahl}{1}
+\setcounter{page}{\value{Seitenzahl}}
+
+% Wenn gewünscht, Verzeichnis der Listings auskommentieren
+%\lstlistoflistings
+
+% Diesen Schalter einbinden, wenn Symbole, Abkürzungen, etc. ohne Referenz im Dokument in den 
+% Verzeichnissen eingebunden werden sollen (meistens der Fall)
+%\glsaddall
+
+% Wenn gewünscht, Glossar auskommentieren (wird nur erstellt, wenn Einträge verfügbar)
+%\printglossary
+
+% Wenn gewünscht, Abkürzungen auskommentieren (wird nur erstellt, wenn Einträge verfügbar)
+%\printglossary[type=\acronymtype,style=list]
+
+% Wenn gewünscht, Symbole auskommentieren (wird nur erstellt, wenn Einträge verfügbar)
+%\printglossary[type=symbols, style=symb3spaltig, nonumberlist]
+
+% Wenn gewünscht, Index auskommentieren
+%\printindex
+
+% Wenn gewünscht, Literaturverzeichnis auskommentieren
+
+%Alle Quellen, ob genutzt oder nicht, werden ausgegeben
+%\nocite{*}
+
+
+%Das kein Seitenumbruch stattfindet
+\interlinepenalty 10000
+
+%\bibliography{Content/Bibliographie}
+
+% Changed by Max W.
+\renewcommand{\bibname}{Literature}
+\bibliography{Content/Bibliographie/zotero_references.bib}
+
+% Anhang
+%\appendix
+%\input{Content/Appendix.tex}
+
+
+% Back Matter abschließen
+\clearpage

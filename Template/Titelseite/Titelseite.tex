@@ -1,0 +1,104 @@
+\begin{titlepage}
+% !! Basiert auf DIN A4 mit dem Font "Computer Modern" bei 11pt !!
+\centering \singlespacing
+
+% Titelseitenkopf
+\begin{minipage}{\textwidth}
+  % Logo links
+	\begin{minipage}{0.4\textwidth}
+		\centering
+		\includegraphics[width=1.47in]{Bilder/tu-logo-eps-converted-to.pdf} % 1.47in
+		%\includegraphics[width=1.2in]{Bilder/Lofelt.png}
+	\end{minipage}
+	\hfill
+	% Fakultät und Institut rechts
+	\begin{minipage}{0.50\textwidth}
+		\large \Fakultaet \vspace{1.5mm}  \\ 
+        \Institut \vspace{1.5mm} \\ 		 
+        \Fachgebiet
+	\end{minipage}
+\end{minipage}
+
+% Zwischenraum
+%\vspace{0.5cm}
+
+%\begin{minipage}{\textwidth}
+%  % Logo links
+%	\begin{minipage}{0.4\textwidth}
+%		\centering
+%		\includegraphics[width=1in]{Bilder/Lofelt.png}
+%	\end{minipage}
+%	\hfill
+%	% Fakultät und Institut rechts
+%	\begin{minipage}{0.50\textwidth}
+%		Lofelt GmbH  \\ 
+%        Oppelnerstr. 27 \\ 		 
+%        10997 Berlin
+%	\end{minipage}
+%\end{minipage}
+
+% Zwischenraum
+\vspace{5cm}
+
+% Haupt- und Untertitel 
+\begin{onehalfspace}
+	\Huge \Titel
+\end{onehalfspace}
+
+\begin{minipage}[5cm]{12cm}
+\centering \Large \Untertitel \\
+\vspace{1cm}
+\end{minipage}
+
+% Zwischenraum
+\vspace{2.5cm}
+
+% Abgabefrist?!
+%\begin{tabular}{rl}
+%	\centering
+%	Abgabefrist: & 30. September 2018, 23:55 Uhr \\
+%\end{tabular}
+
+\vfill
+
+% Gruppen- bzw. Autorenangabe
+%{\small \Gruppe}\\[0.3cm]
+%\begin{tabular}{lr}
+%    Vorgelegt von: \Autor  & \AutorMatrikelNr
+%\end{tabular}\hspace{6.5em}
+
+% Zwischenraum
+%\vspace{1.5cm}
+
+% Line
+\par\noindent\rule{\textwidth}{0.4pt}
+\vspace{0.25 cm}
+
+% Professoren und Betreuer
+\begin{tabular}{ll} 
+    %Hochschullehrer: & \Professor \\[1mm]
+    \ifdefempty{\BetreuerA}{}{Primary Supervisor:  & \Professor \\ }
+    \ifdefempty{\BetreuerB}{}{Secondary Supervisor: & \BetreuerA \\ }
+    & \InstitutB\\
+    &\\
+    Matriculation Number: & \AutorMatrikelNr
+\end{tabular}
+
+% Line + Text
+\vspace{0.5 cm}
+\par\noindent\rule{\textwidth}{0.4pt}
+\vspace{0.25cm}
+
+%A thesis submitted to Technische Universität Berlin in partial fulfilment of the requirements for the degree Master of Science in \emph{Audiocommunication and -technology}.
+
+
+% Umbruch bei langen Titeln verhindern
+\enlargethispage{1cm}
+
+% Zwischenraum
+\vspace{1.0cm}
+
+% Footer erstellen
+\Uni \\ \Fakultaet{}, \Institut  \\ \today
+
+\end{titlepage}

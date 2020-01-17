@@ -1,0 +1,25 @@
+% Änderungen, um Listings in KOMA korekt darzustellen (repariert die Floats)
+\usepackage{scrhack}
+
+% Listings-Unterstützung
+\usepackage{listings}
+
+% Bennenung der Caption und des Verzeichnisses
+\renewcommand*\lstlistingname{Lst.\!}
+\renewcommand*\lstlistlistingname{Template/Listings}
+
+\lstset{
+breaklines=true,		% Automatischer Umbruch
+basicstyle=\scriptsize		% Etwas kleinerer Text als in der Umgebung
+}
+
+% Ein Beispiel:
+%\begin{lstlisting}[float, language=C, label=lst:01, caption={Ein C-Beispiel}, frame=trBL]
+%int main()
+%{
+%	int i;
+%	for (i = 1; i < 10; i++)
+%		printf("%i",i);
+%	return(0);
+%}
+%\end{lstlisting}

@@ -1,0 +1,24 @@
+% Index Erstellung
+\usepackage{makeidx}
+
+% Verweise auf andere Index-Einträge als deutsche Abkürzung
+\renewcommand{\seename}{s.}
+
+% Index festsetzen
+\makeindex
+
+% Achtung: makeindex muss folgendermaßen aufgerufen werden:
+% makeindex -s "Index/Index.ist -i Dokument.idx -o Dokument.ind
+%  Argument z. B. bei TexNicCenter im Postprozessor als
+% -s "Index/Index.ist -i "%bm.idx" -o "%bm.ind"
+
+% Beispiele für die Anwendung
+% \index{hello} 							hello, 1 						Einfacher Eintrag
+% \index{hello!Peter} 	  		Peter, 3 						Untereintrag von 'hello'
+% \index{Sam@\textsl{Sam}} 		Sam, 2 							Formatierter Eintrag (Sortierung vorm @)
+% \index{Lin@\textbf{Lin}} 		Lin, 7 							Wie zuvor
+% \index{Jenny|textbf} 				Jenny, 3 						Formateirte Seitenzahl
+% \index{Joe|textit} 					Joe, 5 							Wie oben
+% \index{ecole@\'ecole} 			école, 4 						Sonderzeichen behandeln
+% \index{Peter|see{hello}} 		Peter, s. hello 		Kreuzreferenz
+

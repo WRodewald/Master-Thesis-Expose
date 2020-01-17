@@ -1,0 +1,50 @@
+% Römische Zahlen für Front Matter
+\pagenumbering{Roman}
+
+% Titelseite einbinden
+%\includepdf{Template/Titelblatt_FG/Titelseite.pdf}
+
+\input{Template/Titelseite/Titelseite}
+
+% Wenn gewünscht, Leerseite einbinden
+%\input{Template/Titelseite/Leerseite}
+
+% Wenn gewünscht, ehrenwörtliche Erklärung einbinden
+%\input{Template/FrontBackMatter/Erklaerung}
+
+% Wenn gewünscht, Leerseite einbinden
+%\input{Template/Titelseite/Leerseite}
+
+% Abstract first? (Max Weber)
+\input{Content/Abstract.tex}
+
+% Wenn gewünscht, Leerseite einbinden
+%\input{Template/Titelseite/Leerseite}
+
+% Acknowlegdements
+%\input{Template/FrontBackMatter/Acknowlegdements.tex}
+
+% Wenn gewünscht, Inhaltsverzeichnis auskommentieren
+\renewcommand{\contentsname}{Table of Contents}
+\tableofcontents
+
+%Formelzeichen
+%\input{Content/Glossar/Formelzeichen.tex}
+
+\cleardoubleoddpage
+% Wenn gewünscht, Abbildungsverzeichnis auskommentieren
+%\listoffigures
+
+% Wenn gewünscht, Tabellenverzeichnis auskommentieren
+%\listoftables
+
+% Abkürzungsverzeichnis
+%\printglossary[type=\acronymtype,style=list]
+
+% Glossar
+%\printglossary[style=index]
+
+
+% Seitenzahl für Back Matter sichern und Front Matter abschließen
+\newcounter{RomanNumbers}
+\addtocounter{RomanNumbers}{\value{page}}

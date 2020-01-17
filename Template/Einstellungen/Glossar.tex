@@ -1,0 +1,61 @@
+% Glossar laden - mit Abkürzungsverzeichnis 
+\usepackage[acronym, toc]{glossaries}
+% Später aufrufen: makeindex -s Dokument.ist -t Dokument.glg -o Dokument.gls Dokument.glo
+
+% Symbolverzeichnis einstellen
+\newglossary{symbols}{sym}{sbl}{Symbolverzeichnis}
+
+% Üebrsetzen von Glossar und Abkürzungsverzeichnis
+%\deftranslation[to=ngerman]{Acronyms}{Abkürzungsverzeichnis}
+%\deftranslation[to=ngerman]{Glossary}{Glossar}
+
+% Entfernen von Punkten hinter den Verzeichniseinträgen
+\renewcommand*{\glspostdescription}{}
+
+% Glossar festsetzen
+\makeglossaries
+% Als standard kein Kommentar bei Symbolen (später überschreibbar)
+\newcommand{\symbComm}{}
+
+% Style für Symbolverzeichnis
+\newglossarystyle{symb3spaltig}{
+% Umgebung: longtable 
+\renewenvironment{theglossary}
+{\symbComm{} \begin{longtable}{@{}p{1.5cm}p{1.5cm}p{\dimexpr\linewidth-1.5cm-1.5cm-4\tabcolsep\relax}@{}}} 
+{\end{longtable}}
+% Tabellenkopf 
+\renewcommand*{\glossaryheader}{ 
+\toprule 
+\textbf{Symbol} & \textbf{Einheit} & \textbf{Beschreibung} \\ %Beschriftung 
+\midrule 
+\endhead}% 
+% keine Überschriften zwischen Gruppen 
+\renewcommand*{\glsgroupheading}[1]{}
+% Haupteinträge in einer Zeile: 
+\renewcommand*{\glossaryentryfield}[3]{
+\glsentryuseri{##1}% Symbol 
+& \glsentryuserii{##1}% Einheit 
+& ##3% Beschreibung 
+\\% Zeilenende 
+}
+% nichts zwischen Gruppen 
+\renewcommand*{\glsgroupskip}{}% 
+} 
+
+% Ausgabe:
+% Glossar: 			\printglossary[style=index]
+% Abkürzungen: 	\printglossary[type=\acronymtype,style=list]
+% Symbole:			\printglossary[type=symbols,style=list]
+
+% Beispiele für die Verwendung
+
+% Für einen Glossareintrag:
+% \newglossaryentry{wagen}{name=Wa-gen,description={Macht Brum Brum},plural=Wa-gen,sort=wagen} 
+% Dereferenzierung: \gls{wagen} (klein) \Gls{wagen} (fängt groß an) \GLS{wagen} (Kapitalschrift) \glspl{wagen} (Plural) ...\Glspl. \GLSpl - Referenz ohne Text: \glsadd
+% Anderes Bsp.: \newglossaryentry{ohm}{name=ohm,symbol={\ensuremath{\Omega}},description=unit of electrical resistance}
+
+% Für eine Abkürzung: 
+% \newacronym{led}{LED}{light-emitting diode}
+
+% Für Symbolverzeichniseintrag:
+% \newglossaryentry{pi}{type=symbols,name={\ensuremath{\pi}},sort=pi, description={ratio of circumference of circle to its diameter}}

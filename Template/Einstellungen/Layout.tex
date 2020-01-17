@@ -1,0 +1,99 @@
+% Hier sind Layoutoptionen zu finden, die aus Übersichtsgründen nicht in der Datei "Klasse.tex" eingefügt sind
+
+% Serifenschrift 
+% Ersetzt Computer Modern mit Latin Modern, sieht aber nahezu gleich aus. Grund ist die mangelnde Unterstützung von korrekt gesetzten Umlauten und die Lesbarkeit am Monitor.
+\usepackage{lmodern}
+
+% Fügt Symbole zum Font hinzu, die in Latin Modern nicht enthalten sind, wie z. B. das Euro-Symbol
+\usepackage{textcomp}
+
+% Ersetzt die Schreibmaschinen-Schrift und verwendet Adobe Courier statt Latin Modern oder Computer Modern
+\usepackage{courier}
+
+%Farbe
+%\usepackage[x11names]{xcolor}
+
+% Optischer Randausgleich
+\usepackage{microtype}
+% Wenn man die Augen zukneift, kann man ohne diesem Paket bei Blocksatz auf der rechten Seite "Dellen" erkennen, da Punkte und Striche vor der virtuellen Trennlinie gehalten werden. Dieses Paket ermöglicht kleine Übertretungen, die das optische Bild verbessern.
+
+% Setzt die Schriftgröße. Ebenfalls soll die Titelseite separat gesetzt werden
+\KOMAoptions{
+fontsize=11pt,			% Schriftgröße. Standard = 11pt
+titlepage=true			% Separat gesetzte Titelseite verwenden
+}
+%Serifenschrift für Überschriften
+\setkomafont{sectioning}{\normalfont\normalcolor\bfseries}
+
+% Verwendung des geometry Packets für die Einstellung des Papierformats / Seitenabstände / Bindekorrektur
+\usepackage[
+a4paper, 													% DIN A4-Papier
+\ifcase\pagetype \or twoside=false \or twoside=true \fi , 	% Ein- oder zweiseitig 
+bindingoffset=\bindCorrection,								% Binde-Korrektur
+bottom=3.35cm													% unterer Rand
+]{geometry}
+\setlength{\footskip}{1cm} %Fußzeile tiefer
+
+%Jede Section neue seite (blöd bei chapterbeginn)
+%\let\oldsection\section
+%\renewcommand\section{\clearpage\oldsection}
+
+% Header und Footer für ein- oder zweiseitigen Satz über das Paket scrpage2 einstellen
+\usepackage[automark, headsepline, footsepline, plainfootsepline, plainheadsepline, ilines]{scrpage2}
+\setlength{\headheight}{1.1\baselineskip} % Max W. ?
+\pagestyle{scrplain}
+\clearscrheadfoot
+\ifcase\pagetype
+\or % Für einseitigen Satz
+
+% HEADER / FOOTER
+\lohead[\Untertitel]{\Untertitel}
+\rohead[\pagemark]{\pagemark}
+\lofoot[{\scriptsize \leftmark}]{
+\ifthenelse{\equal{\leftmark}{\rightmark}}
+	{\scriptsize \rightmark}
+{
+	\ifthenelse{\equal{\rightmark}{}}
+		{\scriptsize {\leftmark}}
+		{\scriptsize {\leftmark} -- {\rightmark}}
+}
+}
+\or % Für zweiseitigen Satz
+% Odd
+\rohead[\pagemark]{\pagemark}       % right odd head
+\lohead[\leftmark]{\leftmark}   % left odd head
+% Even
+\rehead[\PdfTitel]{\Untertitel}     % right even head
+\lehead[\pagemark]{\pagemark}       % left even head
+
+%\lehead[\rightmark]{\rightmark}     % left even head
+%\refoot[{\scriptsize {\leftmark}}]{{\scriptsize {\leftmark}}}
+%\lofoot[{\scriptsize {\rightmark}}]{{\scriptsize {\rightmark}}}
+\fi
+
+% Je nach gewählter Klasse das left- und rightmark anpassen
+\ifcase\doctype 
+\or % Für scrartcl
+\addtokomafont{section}{\thispagestyle{scrplain}}
+\renewcommand{\sectionmark}[1]{\markright{}\markleft{Abschnitt\ \thesection\ #1}{}}
+\renewcommand{\subsectionmark}[1]{\markright{#1}{}}
+\or % Für scrreprt 
+%\addtokomafont{pagehead}{\scshape} %Kapitälchen in Header und Footer
+\renewcommand{\chaptermark}[1]{\markright{}\markleft{\chaptername\ \thechapter\ #1}{}}
+\renewcommand{\sectionmark}[1]{\markright{#1}{}}
+\or % Für scrbook
+\renewcommand{\chaptermark}[1]{\markright{}\markleft{\chaptername\ \thechapter\ #1}{}}
+\renewcommand{\sectionmark}[1]{\markright{Abschnitt\ \thesection.\ #1}{}}
+\fi
+
+%Mathe in Überschriften fett
+\makeatletter
+\g@addto@macro\bfseries{\boldmath}
+\makeatother
+
+% Römische Ziffern im ToC sind sonst falsch aligned
+\usepackage[tocindentauto]{tocstyle}
+\usetocstyle{KOMAlike}
+\settocstylefeature{pagenumberbox}{\hbox}
+
+\usepackage[format=hang,justification=raggedright]{caption}

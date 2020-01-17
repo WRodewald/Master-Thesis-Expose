@@ -1,0 +1,92 @@
+% Einbinden von Vektor- und Rastergraphiken
+%\usepackage[pdftex]{graphicx}
+%\usepackage[space]{grffile}
+
+%\graphicspath{{"D:/fabian sicherung/Uni-Master/Masterarbeit/Dokument/Bilder/pdf/"}{"D:/fabian sicherung/Uni-Master/Masterarbeit/Dokument/Bilder/jpg/"}}
+%Hier Pfad ändern für kleinere Bilder
+%\graphicspath{{"D:/fabian sicherung/Uni-Master/Masterarbeit/Dokument/Bilder/pdf/"}{"D:/fabian sicherung/Uni-Master/Masterarbeit/Dokument/Bilder/jpg/komprimiert/"}}
+
+
+% Beispiel einer Anwendung: 
+%\begin{figure}[!htb] % <<<---- Am besten hier positionieren, sonst oben oder unten auf der Seite
+%\centering   % <<<---- Zentrierte Darstellung
+%\includegraphics[width=1.00\textwidth]{beispiel.pdf}  % <<<---- Fügt auf ganze Seitenbreite das Bild "beispiel.pdf" ein
+%\caption{Beispielbild}  % <<<---- Bildunterschrift
+%\label{fig:marke}  % <<<---- Marke zum Referenzieren
+%\end{figure}
+
+% Ermöglicht die Verwendung von eps-Graphiken
+%\usepackage{epstopdf}
+% Dieses Paket wandelt on-the-fly eps-Dateien in pdf-Dateien um, diese werden in dem Bilder-Ordner automatisch abgelegt!
+% Benötigt \write18 enabled, d. h. --shell-escape für tetex, texlive oder --enable-write18 für miktex
+
+%Einbinden von Tikz und pgf, so dass auch sehr große 3D-Grafiken dargestellt werden können
+\usepackage{tikz,pgfplots}
+\usetikzlibrary{spy} %Vergrößerung
+%PGFPLot-Optionen in Reihenfolge: Kompatibilität, deutsche Zahlentrennzeichen, runde Graphecken, dickere Graphen (0.4 is standard), kleinere Zahlen an Achsen, Hintergrund leicht blau, Rahmen etwas dicker, Grid, NaNs nicht zeichnen, x-Achse nicht enlargen
+\pgfplotsset{compat=1.5, /pgf/number format/use comma,  every axis plot post/.append style={line join=round}, every axis plot/.append style={line width=1 pt}, axis background/.style={fill=blue!3}, axis line style = thick, grid=major, unbounded coords=jump, enlarge x limits=false}%every axis plot post/.append style={mark=none}},/pgf/number format/fixed,
+
+%Legendensachen: Strichstärke, vert. Abstand Zeilen, Schrift links ausrichten, minor ticks kürzer
+\pgfplotsset{
+legend image post style={line width=1pt},
+legend style={row sep=2pt},
+legend cell align=left,
+minor tick length=0.1cm* 0.8,
+minor x tick num=1,
+minor y tick num=1
+}
+
+%Schriftgrößen
+\pgfplotsset{
+	tick label style={font=\footnotesize},
+	label style={font=\small},
+	legend style={font=\small}
+}
+
+%Color Cycle List für PGF
+\pgfplotscreateplotcyclelist{mycolorlist}{%
+	blue\\%
+	red\\%
+	green!60!black\\%
+	cyan\\%
+	orange\\%
+	magenta\\%
+	violet\\%
+	lime\\%
+	black\\%
+}
+
+\usetikzlibrary{pgfplots.external,pgfplots.colormaps,decorations.markings,chains,fit,shapes,decorations.pathreplacing,positioning}
+\usepgfplotslibrary{patchplots,colormaps}
+
+%Makro für colormap reversen
+\makeatletter
+\def\customrevertcolormap#1{%
+	\pgfplotsarraycopy{pgfpl@cm@#1}\to{custom@COPY}%
+	\c@pgf@counta=0
+	\c@pgf@countb=\pgfplotsarraysizeof{custom@COPY}\relax
+	\c@pgf@countd=\c@pgf@countb
+	\advance\c@pgf@countd by-1 %
+	\pgfutil@loop
+	\ifnum\c@pgf@counta<\c@pgf@countb
+	\pgfplotsarrayselect{\c@pgf@counta}\of{custom@COPY}\to\pgfplots@loc@TMPa
+	\pgfplotsarrayletentry\c@pgf@countd\of{pgfpl@cm@#1}=\pgfplots@loc@TMPa
+	\advance\c@pgf@counta by1 %
+	\advance\c@pgf@countd by-1 %
+	\pgfutil@repeat
+	%\pgfplots@colormap@showdebuginfofor{#1}%
+}%
+
+\makeatother
+
+%pfdpages für Titelblatt muss vor externalize und dort auch "ausgeschlossen" werden durch optimize
+\usepackage{pdfpages}
+
+%Funktionierende, Scheiss-Methode:
+%\tikzexternalize[shell escape=-enable-write18, prefix=Bilder/externalized/, optimize command away=\includepdf]
+
+%Intervall zeichnen
+\usepackage{tikz-dimline}
+
+%alle neu machen...
+%\tikzset{external/force remake}

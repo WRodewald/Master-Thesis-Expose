@@ -8,7 +8,6 @@
 	\begin{minipage}{0.4\textwidth}
 		\centering
 		\includegraphics[width=1.47in]{Bilder/tu-logo-eps-converted-to.pdf} % 1.47in
-		%\includegraphics[width=1.2in]{Bilder/Lofelt.png}
 	\end{minipage}
 	\hfill
 	% Fakultät und Institut rechts
@@ -77,11 +76,13 @@
 % Professoren und Betreuer
 \begin{tabular}{ll} 
     %Hochschullehrer: & \Professor \\[1mm]
+    
+    Submitted by: & \Autor\\
+    Matriculation Number: & \AutorMatrikelNr\\
+    &\\
     \ifdefempty{\BetreuerA}{}{Primary Supervisor:  & \Professor \\ }
     \ifdefempty{\BetreuerB}{}{Secondary Supervisor: & \BetreuerA \\ }
-    & \InstitutB\\
-    &\\
-    Matriculation Number: & \AutorMatrikelNr
+    & \InstitutB
 \end{tabular}
 
 % Line + Text
